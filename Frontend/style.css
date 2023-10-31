@@ -135,3 +135,50 @@
     display: none;
   }
 
+  /* Haciendo responsivo el Proyecto */
+
+
+@media screen and (min-width: 768px) {
+
+  .menu-hamburguesa {
+    display: none;
+  }
+
+  .main-logo {
+    flex-basis: 30%;
+  }
+
+  .main-header{
+      position: fixed;
+  }
+
+  .nav {
+    position: static;
+    margin: auto;
+    flex-basis: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end; 
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+
