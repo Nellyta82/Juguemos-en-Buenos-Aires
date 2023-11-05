@@ -1,7 +1,7 @@
-const $btnSingIn = document.querySelector(".sing__in__btn"),
-  $btnSingUp = document.querySelector(".sing__up__btn"),
-  $singUp = document.querySelector(".sing__up"),
-  $singIn = document.querySelector("sing__in");
+const $btnSingIn = document.querySelector(".sign-in-btn"),
+  $btnSingUp = document.querySelector(".sign-up-btn"),
+  $singUp = document.querySelector(".sign-up"),
+  $singIn = document.querySelector(".sign-in");
 
 //evento clic si es llamado con el botón de iniciar sesión o el de registrarse
 document.addEventListener("click", (e) => {

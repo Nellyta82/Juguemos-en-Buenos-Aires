@@ -4,39 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio/Registro</title>
     <link rel="shortcut icon" href="./assets/media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico"
         type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Estilos boxicons-->
     <link rel="stylesheet" href="./assets/css/style-login.css">
+    <title>Inicio/Registro</title>
 </head>
 
 <body>
+
+
     <!--CONTENEDOR PARA LA OPCIÓN DE REGISTRASE-->
-    <div class="container__form sing__up">
-        <div class="welcome__back">
+    <div class="container-form sign-up">
+        <div class="welcome-back">
             <div class="message">
                 <h2>¡Bienvenido a Juguemos en Buenos Aires!</h2>
                 <p>Si ya tienes una cuenta por favor inicia sesión aquí.</p>
-                <button class="sing__up__btn">Iniciar Sesión</button>
+                <button class="sign-up-btn">Iniciar Sesión</button>
             </div>
         </div>
 
-        <form action="" method="post" class="formulario">
-            <h2 class="craete__acaunt">Crear una cuenta</h2>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
             <div class="icons">
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='google' type='logo' color='#f7f3f3'></box-icon>
                 </div>
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='instagram-alt' type='logo' color='#f7f3f3'></box-icon>
                 </div>
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='facebook-circle' type='logo' color='#f7f3f3'></box-icon>
                 </div>
             </div>
 
-            <p class="cuenta__gratis">Crear una cuenta gratis</p>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
@@ -44,32 +46,34 @@
         </form>
     </div>
 
+
+
     <!--CONTENEDOR PARA EL INICIO DE SESIÓN-->
-    <div class="container__form sing__in">
-        <form action="" method="post" class="formulario">
-            <h2 class="craete__acaunt">Iniciar Sesión</h2>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesión</h2>
             <div class="icons">
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='google' type='logo' color='#f7f3f3'></box-icon>
                 </div>
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='instagram-alt' type='logo' color='#f7f3f3'></box-icon>
                 </div>
-                <div class="border__icons">
+                <div class="border-icon">
                     <box-icon name='facebook-circle' type='logo' color='#f7f3f3'></box-icon>
                 </div>
             </div>
-            <p class="cuenta__gratis">¿Aún no tienes cuenta?</p>
+            <p class="cuenta-gratis">¿Aún no tienes cuenta?</p>
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
             <input type="button" value="Iniciar sesión">
         </form>
 
-        <div class="welcome__back">
+        <div class="welcome-back">
             <div class="message">
                 <h2>¡Bienvenido nuevamente a Juguemos en Buenos Aires!</h2>
                 <p>Si aún no tienes una cuenta por favor registrese aquí.</p>
-                <button class="sing__in__btn">Registrarse</button>
+                <button class="sign-in-btn">Registrarse</button>
             </div>
         </div>
     </div>
@@ -77,7 +81,7 @@
 
 
     <!--script de la pagina para activar las clases con css que esconda y aparezca el contenedor de registro e inicio-->
-    <script src="./assets/js/main-login.js"></script>
+    <script src="../login/assets/js/main-login.js"></script>
 
     <!--script de boxicons-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
