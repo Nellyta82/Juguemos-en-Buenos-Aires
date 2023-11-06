@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -11,8 +7,9 @@
     background-color: rgb(252, 247, 209)
 }
 
-
 /* Haciendo Cambios al nav */
+
+
 
 .main-header{
     height: 90px;
@@ -56,11 +53,11 @@
 
 .nav-link{
     margin-top: 2rem;
-    color: rgb(88, 244, 49);
+    color: rgb(46, 248, 49);
     text-decoration: none;
     font-weight: bold;
     position: relative;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
 .nav-link::after {
@@ -82,7 +79,7 @@
 .main-logo h3{
     font-family: 'Satisfy', cursive;
     padding-left: 5px;
-    color: rgb(95, 236, 39);
+    color: rgb(46, 248, 49);
 }
 
 .main-logo .n2{
@@ -135,50 +132,81 @@
     display: none;
   }
 
-  /* Haciendo responsivo el Proyecto */
-
-
-@media screen and (min-width: 768px) {
-
-  .menu-hamburguesa {
-    display: none;
+li{
+    list-style-type: none;
   }
 
-  .main-logo {
-    flex-basis: 30%;
-  }
 
-  .main-header{
-      position: fixed;
-  }
+  /* Cambio del menú desplegable */
 
-  .nav {
-    position: static;
-    margin: auto;
-    flex-basis: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end; 
-  }
-
-  .nav-links {
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  .nav-link {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+.menu:hover > ul {
+  display: block;
+  top: 48px;
 }
+
+.menu ul{
+  display: none; 
+  overflow: visible;
+ 
+}
+
+.menu ul .Barrios{
+  position: relative;
+  top: 10px;
+  left: 0px;
+  float: left;
+  text-align: left;
+  overflow: visible;
+  width: 250px;
+}
+
+ /* Haciendo responsivo el Proyecto */
+
+
+ @media screen and (min-width: 768px) {
+
+    .menu-hamburguesa {
+      display: none;
+    }
+  
+    .main-logo {
+      flex-basis: 30%;
+    }
+  
+    .main-header{
+        position: fixed;
+    }
+  
+    .nav {
+      position: static;
+      margin: auto;
+      flex-basis: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end; 
+    }
+  
+    .nav-links {
+      width: 100%;
+      margin-left: 20px;
+    }
+  
+    .nav-link {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 1.5rem;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  
+  }
+  
+  
 
 
