@@ -4,7 +4,7 @@
     padding: 0px;
     width: 100%;
     scroll-behavior: smooth;
-    background-color: rgb(252, 247, 209)
+    background-color: rgb(04, 04, 04)
 }
 
 /* Haciendo Cambios al nav */
@@ -19,11 +19,13 @@
     padding: 0 0.4rem;
     font-family: 'Satisfy', cursive;
     font-size: 1.5rem;
+    background-color: rgb(140, 147, 214);
   }
 
   .main-logo{
-    color: rgb(46, 248, 49);
+    
     text-decoration:none;
+    background-color: rgb(140, 147, 214);
    
   }
 
@@ -36,6 +38,7 @@
     margin-left: -100%;
     transition: all .2s linear;
     z-index: 100;
+    background-color: rgb(140, 147, 214);
   }
 
 .nav.show{
@@ -53,23 +56,15 @@
 
 .nav-link{
     margin-top: 2rem;
-    color: rgb(46, 248, 49);
+    color: rgb(236, 236, 241);
     text-decoration: none;
     font-weight: bold;
     position: relative;
     margin-left: 0px;
+    background-color: rgb(140, 147, 214);
+    height: 100%;
   }
 
-.nav-link::after {
-    position: absolute;
-    content: "";
-    background-color: rgb(244, 148, 30);
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    transition: 0.3s ease all;
-  }
   
 .nav-link:hover::after {
     width: 100%;
@@ -79,7 +74,8 @@
 .main-logo h3{
     font-family: 'Satisfy', cursive;
     padding-left: 5px;
-    color: rgb(46, 248, 49);
+    color: rgb(236, 236, 241);
+    background-color: rgb(140, 147, 214);
 }
 
 .main-logo .n2{
@@ -87,11 +83,11 @@
 }
 
 .main-logo h3:hover{
-    color: rgb(244, 148, 30);
+    color: rgb(70, 80, 211);
 }
 
 .nav .nav-link:hover{
-    color: rgb(244, 148, 30);
+    color: rgb(70, 80, 211);
 } 
 
 .menu-hamburguesa {
@@ -100,7 +96,6 @@
   height: 40px;
   border: none;
   display: flex;
-  background: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -112,7 +107,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: rgb(244, 148, 30);
+  background: rgb(140, 147, 214);
   border-radius: 3px;
   transform-origin: 4px 0px;
   transition: all .2s linear;
@@ -121,7 +116,7 @@
 .menu-hamburguesa.close span {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 0px);
-    background: rgb(244, 148, 30);
+    background: rgb(140, 147, 214);
   }
   
 .menu-hamburguesa.close span:nth-child(2){
@@ -147,6 +142,7 @@ li{
 .menu ul{
   display: none; 
   overflow: visible;
+  background-color: rgb(140, 147, 214);
  
 }
 
@@ -158,6 +154,7 @@ li{
   text-align: left;
   overflow: visible;
   width: 250px;
+  background-color: rgb(140, 147, 214);
 }
 
  /* Haciendo responsivo el Proyecto */
@@ -187,11 +184,13 @@ li{
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end; 
+      background-color: rgb(140, 147, 214);
     }
   
     .nav-links {
       width: 100%;
       margin-left: 20px;
+      background-color: rgb(140, 147, 214);
     }
   
     .nav-link {
@@ -201,8 +200,7 @@ li{
       align-items: center;
       justify-content: flex-end;
       font-size: 1.5rem;
-      margin-right: 20px;
-      margin-left: 20px;
+      background-color: rgb(140, 147, 214);
     }
   
   }
