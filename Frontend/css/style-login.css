@@ -80,15 +80,9 @@ body {
 .formulario{
     width: 400px;
     padding: 1rem;
-<<<<<<< HEAD
-    box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
-    margin: 2rem;
-    background-color: rgba(12, 23, 34, 0.7);
-=======
     box-shadow: 0 5px 5px 10px rgba(0,0,0,.4);
     /* margin: 2rem; */
     background-color: rgba(12, 23, 34, 0.5);
->>>>>>> a52a4bf61543c000e684cf1f6aaba4b849b5289c
     text-align: center;
     margin-left: 16px;
     margin-right: 16px;
