@@ -9,7 +9,7 @@
    
     }
 
-.parque-thays{
+.parque-izquierda{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-#content-thays{
+#content-izquierda{
     color: rgb(236, 236, 241);
     margin-top: 20px;
     justify-content: center;
@@ -33,7 +33,7 @@
     width: cover;
 }
 
-.parque-vicentelopezyplanes{
+.parque-derecha{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -43,26 +43,7 @@
     margin: auto;
 }
 
-#content-vicente{
-    color: rgb(236, 236, 241);
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.parque-ruben{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-
-#content-ruben{
+#content-derecha{
     color: rgb(236, 236, 241);
     margin-top: 20px;
     justify-content: center;
@@ -76,11 +57,21 @@
     width: cover;
 }
 
+#imgparaguay{
+    height: 300px;
+    width: cover;
+}
+
+#imgmujica{
+    height: 350px;
+    width: cover;
+}
+
 /* Haciendo Responsivo el Proyecto */
 
 @media screen and (max-width: 700px) {
 
-    .parque-thays{
+    .parque-izquierda{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         align-items: center;
@@ -90,17 +81,7 @@
         margin: auto;
     }
 
-    .parque-vicentelopezyplanes{
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
-
-    .parque-ruben{
+    .parque-derecha{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         align-items: center;
