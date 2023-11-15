@@ -6,6 +6,7 @@
     padding-left: 16px;
     padding-right: 16px;
     color: rgb(236, 236, 241);
+    background-color: black;
    
     }
 
@@ -49,6 +50,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+}
+
+#contenedor-mapa{
+    height: 300px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
     
 }
 
