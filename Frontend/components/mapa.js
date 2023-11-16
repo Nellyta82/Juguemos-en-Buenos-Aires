@@ -16,39 +16,52 @@ marcador.bindPopup("Parque Vicente López")
 // }).addTo(map)
 // circulo.bindPopup("Confiteria Las Esclavas")
 
-if(!navigator.geolocation) {
-    console.log("Your browser doesn't support geolocation feature!")
-} else {
-    setInterval(() => {
-        navigator.geolocation.getCurrentPosition(getPosition)
-    }, );
+// if(!navigator.geolocation) {
+//     console.log("Your browser doesn't support geolocation feature!")
+// } else {
+//     setInterval(() => {
+//         navigator.geolocation.getCurrentPosition(getPosition)
+//     }, );
+// }
+
+// var marker, circle;
+
+// function getPosition(position){
+//     // console.log(position)
+//     var lat = position.coords.latitude
+//     var long = position.coords.longitude
+//     var accuracy = position.coords.accuracy
+
+//     if(marker) {
+//         map.removeLayer(marker)
+//     }
+
+//     if(circle) {
+//         map.removeLayer(circle)
+//     }
+
+//     marker = L.marker([lat, long])
+//     circle = L.circle([lat, long], {radius: accuracy})
+
+//     var featureGroup = L.featureGroup([marker, circle]).addTo(map)
+
+//     map.fitBounds(featureGroup.getBounds())
+
+//     console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
+// }
+
+// const currentZoom = map.getZoom();
+// map.locate({setView: true, maxZoom:15});
+
+map.locate({setView: true, maxZoom: 16});
+
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("Esta es tú ubicación").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
 }
 
-var marker, circle;
-
-function getPosition(position){
-    // console.log(position)
-    var lat = position.coords.latitude
-    var long = position.coords.longitude
-    var accuracy = position.coords.accuracy
-
-    if(marker) {
-        map.removeLayer(marker)
-    }
-
-    if(circle) {
-        map.removeLayer(circle)
-    }
-
-    marker = L.marker([lat, long])
-    circle = L.circle([lat, long], {radius: accuracy})
-
-    var featureGroup = L.featureGroup([marker, circle]).addTo(map)
-
-    map.fitBounds(featureGroup.getBounds())
-
-    console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
-}
-
-const currentZoom = map.getZoom();
-map.locate({setView: false, maxZoom:15});
+map.on('locationfound', onLocationFound);
