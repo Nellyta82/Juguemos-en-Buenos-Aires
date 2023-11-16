@@ -10,8 +10,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marcador = L.marker([-34.593588, -58.388884]).addTo(map);
 marcador.bindPopup("Parque Vicente López")
 
-var circulo = L.circle([-34.5943317, -58.3910046], {
-    radius: 50,
+var circulo = L.circleMarker([-34.5943317, -58.3910046], {
+    radius: 10,
     color: "green"
 }).addTo(map)
 circulo.bindPopup("Confiteria Las Esclavas")
