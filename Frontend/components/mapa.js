@@ -1,8 +1,8 @@
-var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 6)
+var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 16)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    minZoom: 5, maxZoom: 16,
+    minZoom: 5, maxZoom: 19,
     updateWhenIdle: true,
     reuseTiles: true
 }).addTo(map)
@@ -51,4 +51,4 @@ function getPosition(position){
 }
 
 const currentZoom = map.getZoom();
-map.locate({setView: true, maxZoom:10});
+map.locate({setView: true, maxZoom:19});
