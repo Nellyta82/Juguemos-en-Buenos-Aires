@@ -10,11 +10,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marcador = L.marker([-34.593588, -58.388884]).addTo(map);
 marcador.bindPopup("Parque Vicente López")
 
-// var circulo = L.circle([-34.5943317, -58.3910046], {
-//     radius: 200,
-//     color: "green"
-// }).addTo(map)
-// circulo.bindPopup("Confiteria Las Esclavas")
+var circulo = L.circle([-34.5943317, -58.3910046], {
+    radius: 50,
+    color: "green"
+}).addTo(map)
+circulo.bindPopup("Confiteria Las Esclavas")
 
 // if(!navigator.geolocation) {
 //     console.log("Your browser doesn't support geolocation feature!")
@@ -65,3 +65,9 @@ function onLocationFound(e) {
 }
 
 map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+    alert(e.message);
+}
+
+map.on('locationerror', onLocationError);
