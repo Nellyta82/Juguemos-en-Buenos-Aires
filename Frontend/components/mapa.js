@@ -1,7 +1,10 @@
 var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    minZoom: 5, maxZoom: 16,
+    updateWhenIdle: true,
+    reuseTiles: true
 }).addTo(map)
 
 var marcador = L.marker([-34.593588, -58.388884]).addTo(map);
@@ -46,3 +49,5 @@ function getPosition(position){
 
     console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
 }
+
+const currentZoom = map.getZoom();
