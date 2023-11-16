@@ -51,4 +51,4 @@ function getPosition(position){
 }
 
 const currentZoom = map.getZoom();
-map.locate({setView: true, maxZoom:15});
+map.locate({setView: false, maxZoom:15});
