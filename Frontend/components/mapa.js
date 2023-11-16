@@ -1,4 +1,4 @@
-var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 13)
+var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -38,7 +38,7 @@ function getPosition(position){
     }
 
     marker = L.marker([lat, long])
-    circle = L.circle([lat, long])
+    circle = L.circle([lat, long], {radius: accuracy})
 
     var featureGroup = L.featureGroup([marker, circle]).addTo(map)
 
