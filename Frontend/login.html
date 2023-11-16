@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="./media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Estilos boxicons-->
     <link rel="stylesheet" href="./css/style-login.css">
     <title>Inicio/Registro</title>
@@ -20,11 +19,11 @@
             <div class="message">
                 <h2>¡Bienvenido a Juguemos en Buenos Aires!</h2>
                 <p>Si ya tienes una cuenta por favor inicia sesión aquí.</p>
-                <button class="sign-up-btn">Iniciar Sesión</button>
+                <button class="sign-up-btn" type="submit">Iniciar Sesión</button>
             </div>
         </div>
 
-        <form class="formulario">
+        <form class="formulario" id="sign-up-form">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="icons">
                 <div class="border-icon">
@@ -42,7 +41,7 @@
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
-            <input type="button" value="Registrarse">
+            <button id="" type="submit">Regístrate</button>
         </form>
     </div>
 
@@ -50,7 +49,7 @@
 
     <!--CONTENEDOR PARA EL INICIO DE SESIÓN-->
     <div class="container-form sign-in">
-        <form class="formulario">
+        <form class="formulario" id="iniciar-sesion">
             <h2 class="create-account">Iniciar Sesión</h2>
             <div class="icons">
                 <div class="border-icon">
@@ -64,27 +63,52 @@
                 </div>
             </div>
             <p class="cuenta-gratis">¿Aún no tienes cuenta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar sesión">
+            <input type="email" id="email-inicio-sesion" placeholder="Email" required>
+            <input type="password" id="contraseña-inicio-sesion" placeholder="Contraseña">
+            <button type="submit" id="btn-iniciar-sesion">Iniciar sesión</button>
         </form>
 
         <div class="welcome-back">
             <div class="message">
                 <h2>¡Bienvenido nuevamente a Juguemos en Buenos Aires!</h2>
                 <p>Si aún no tienes una cuenta por favor registrese aquí.</p>
-                <button class="sign-in-btn">Registrarse</button>
+                <button class="sign-in-btn" type="submit">Registrarse</button>
             </div>
         </div>
     </div>
 
-
+    <!--Autenticación login js-->
+    <script src="./components/autenticacion-login.js"></script>
 
     <!--script de la pagina para activar las clases con css que esconda y aparezca el contenedor de registro e inicio-->
     <script src="./components/main-login.js"></script>
 
     <!--script de boxicons-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <!--Script de firebase-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBdzUsgpORfF3Jxf3EcGdZ4vG_Ou-NyXzQ",
+            authDomain: "juguemos-en-buenos-aires.firebaseapp.com",
+            projectId: "juguemos-en-buenos-aires",
+            storageBucket: "juguemos-en-buenos-aires.appspot.com",
+            messagingSenderId: "703939003907",
+            appId: "1:703939003907:web:fa3524a8ba3e063cd03036"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 
 
 </body>
