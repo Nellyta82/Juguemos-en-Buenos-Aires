@@ -1,0 +1,64 @@
+#flores {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+   
+    }
+
+.plaza-del-angel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-plaza-del-angel{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgangelgris{
+    height: 300px;
+    width: cover;
+}
+
+.plaza-periodistas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-plazaperiodistas{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#ParqueChacabuco{
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+      
+}
