@@ -1,4 +1,4 @@
-var map = L.map('contenedor-mapa').setView([-34.593588, -58.388884], 13)
+var map = L.map('contenedor-mapa').setView([-34.58308875, -58.3935243201024], 13)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png?', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
