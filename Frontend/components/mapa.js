@@ -41,7 +41,7 @@ function getPosition(position){
     }
 
     marker = L.marker([lat, long])
-    circle = L.circle([lat, long])
+    circle = L.circle([lat, long], {radius: accuracy})
 
     var featureGroup = L.featureGroup([marker, circle]).addTo(map)
 
