@@ -1,0 +1,17 @@
+window.addEventListener('load', iniciar, false);
+
+function iniciar() {
+  
+  var imagen = document.getElementById('imgplaza-angel');
+  
+  imagen.addEventListener('mouseover', otra, false);
+  imagen.addEventListener('mouseout', restaurar, false);
+}
+
+function restaurar(){
+  var imagen = document.getElementById('imgthays').src = "./media/images/plaza-angel-gris-2.png";
+}
+
+function otra() {
+  var imagen = document.getElementById('imgthays').src = "./media/images/plaza-angel-gris-1.jpg";
+}

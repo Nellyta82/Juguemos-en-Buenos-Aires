@@ -1,0 +1,80 @@
+#parque-chacabuco {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    background-color: black;
+   
+    }
+
+.plazoleta-antoine{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-plazoletaantoine{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgantoinesaint{
+    height: 300px;
+    width: cover;
+}
+
+.patiodejuegoschacabuco{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-evaperon-y-puan{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+.patiodejuegoschacabuco2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-achaval{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgpatioachaval{
+    height: 300px;
+    width: cover;
+}
