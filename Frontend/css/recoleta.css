@@ -34,6 +34,14 @@
     width: cover;
 }
 
+#contenedor-mapa-thays{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 .parque-derecha{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -77,6 +85,11 @@
     width: cover;
 }
 
+#imgemilio{
+    height: 450px;
+    width: cover;
+}
+
 /* Haciendo Responsivo el Proyecto */
 
 @media screen and (max-width: 700px) {
@@ -99,6 +112,25 @@
         text-align: center;
         width: 100%;
         margin: auto;
+    }
+
+    #imgthays{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-thays{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
     }
 
 }

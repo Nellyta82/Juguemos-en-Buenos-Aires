@@ -4,11 +4,11 @@ function nuevo() {
   
   var img = document.getElementById('imgmujica');
   
-  img.addEventListener('mouseover', change, false);
+  img.addEventListener('mouseover', vuelta, false);
   img.addEventListener('mouseout', other, false);
 }
 
-function change(){
+function vuelta(){
   var img = document.getElementById('imgmujica').src = "./media/images/mujica1.jpg";
 }
 
