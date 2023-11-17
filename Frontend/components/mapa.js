@@ -7,11 +7,20 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     reuseTiles: true
 }).addTo(map)
 
-var marcador = L.marker([-34.593588, -58.388884]).addTo(map);
+var greenIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+var marcador = L.marker([-34.593588, -58.388884], {icon: greenIcon}).addTo(map);
 marcador.bindPopup("Parque Vicente López")
 
-var circulo = L.circle([-34.5943317, -58.3910046], {
-    radius: 50,
+var circulo = L.marker([-34.5943317, -58.3910046], {
+    radius: 10,
     color: "green"
 }).addTo(map)
 circulo.bindPopup("Confiteria Las Esclavas")
