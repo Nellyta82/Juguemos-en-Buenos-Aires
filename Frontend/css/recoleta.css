@@ -75,6 +75,14 @@
     width: cover;
 }
 
+#contenedor-mapa-ruben{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 #imgparaguay{
     height: 300px;
     width: cover;
@@ -85,8 +93,26 @@
     width: cover;
 }
 
+#contenedor-mapa-mujica{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 #imgemilio{
     height: 450px;
+    width: cover;
+}
+
+#imgrodriguez{
+    height: 400px;
+    width: cover;
+}
+
+#imghoussay{
+    height: 400px;
     width: cover;
 }
 
@@ -127,6 +153,20 @@
     }
 
     #contenedor-mapa-thays{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-ruben{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-mujica{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
