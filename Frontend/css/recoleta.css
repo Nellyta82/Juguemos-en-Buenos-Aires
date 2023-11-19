@@ -88,6 +88,14 @@
     width: cover;
 }
 
+#contenedor-mapa-paraguay{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 #imgmujica{
     height: 350px;
     width: cover;
@@ -106,14 +114,46 @@
     width: cover;
 }
 
+#contenedor-mapa-emilio{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 #imgrodriguez{
     height: 400px;
     width: cover;
 }
 
+#contenedor-mapa-rodriguez{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#contenedor-mapa-miguel{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
 #imghoussay{
     height: 400px;
     width: cover;
+}
+
+#contenedor-mapa-bernardo{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
 }
 
 /* Haciendo Responsivo el Proyecto */
@@ -167,6 +207,41 @@
     }
 
     #contenedor-mapa-mujica{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-paraguay{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-emilio{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-rodriguez{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-miguel{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-bernardo{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
