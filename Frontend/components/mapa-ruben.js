@@ -1,11 +1,11 @@
-var mapthays = L.map('contenedor-mapa-thays').setView([-34.58308875, -58.3935243201024], 6)
+var mapruben = L.map('contenedor-mapa-ruben').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     minZoom: 5, maxZoom: 15,
     updateWhenIdle: true,
     reuseTiles: true
-}).addTo(mapthays)
+}).addTo(mapruben)
 
 var greenIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -34,42 +34,34 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapthays);
-marcador.bindPopup("Parque Thays")
+var marcador = L.marker([-34.5830077, -58.3951275], {icon: greenIcon}).addTo(mapruben);
+marcador.bindPopup("Parque Rubén Darío")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapthays)
-circulo.bindPopup("Facultad de Derecho")
+var circulo = L.marker([-34.5817742, -58.3941235]).addTo(mapruben)
+circulo.bindPopup("Floralis Genérica")
 
+var hospital = L.marker([-34.5851375, -58.4017047], {icon: redIcon}).addTo(mapruben);
+hospital.bindPopup("Hospital General de Agudos Bernardino Rivadavia")
 
-
-// var circulo = L.marker([-34.5840068,, -58.3931816]).addTo(mapthays)
-// circulo.bindPopup("Museo Nacional de Bellas Artes")
-
-// var circulo = L.marker([-34.5865211, -58.3917881]).addTo(mapthays)
-// circulo.bindPopup("Centro Cultural de Recoleta")
-
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapthays);
-hospital.bindPopup("Sanatorio Agote")
-
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapthays);
+var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapruben);
 comisaria.bindPopup("Comisaría Comunal 2")
 
 
-mapthays.locate({setView: true, maxZoom: 16});
+mapruben.locate({setView: true, maxZoom: 16});
 
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapthays)
+    L.marker(e.latlng).addTo(mapruben)
         .bindPopup("Esta es tú ubicación").openPopup();
 
-    L.circle(e.latlng, radius).addTo(mapthays);
+    L.circle(e.latlng, radius).addTo(mapruben);
 }
 
-mapthays.on('locationfound', onLocationFound);
+mapruben.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
     alert(e.message);
 }
 
-mapthays.on('locationerror', onLocationError);
+mapruben.on('locationerror', onLocationError);
