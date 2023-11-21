@@ -24,6 +24,11 @@ img {
     height: 60%;
 }
 
+#img4{
+  height: 200px;
+  width: cover;
+}
+
 .card-body{
    color: #b8c7e5
 }
@@ -42,16 +47,6 @@ img {
     color: rgb(236, 236, 241);
 }
 
-/* .col{
-    transform: scale(var(--escala, 1));
-  transition: transform 0.25s;
-}
-
-.col:hover{
-    --escala: 1.2;
-    cursor:pointer;
-  } */
-
 .col:hover {
     -webkit-transform:scale(0.9);transform:scale(0.9);
 }
@@ -60,12 +55,3 @@ img {
     overflow:hidden;
 }
 
-  /* .col{
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: #F1C40F;
-  }
-  .col:hover{
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-  } */

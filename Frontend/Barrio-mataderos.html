@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/mataderos.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo">
+            <h3>Juguemos</h3>
+            <h3 class="n2">en BA</h3>
+        </div class="nav-links" >
+            <nav class="nav" id="nav">
+                <div class="nav-links">
+                  <li>
+                    <a href="./index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="menu" >
+                    <a href="./Comunas.html" class="nav-link">Comunas</a>
+                <ul>
+                    <li class="Barrios">
+                        <a href="#Barrios" class="nav-link">Barrios</a>
+                    </li>
+                </ul> 
+                </li>
+                <li>     
+                    <a href="#Contacto" class="nav-link">Contacto</a>
+                </li>
+                <li>     
+                  <a href="./login.html" class="nav-link">Registrarse</a>
+              </li>
+                </div> 
+            </nav>
+            <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>          
+    </header>
+    <main id="recoleta">
+        <h1>Barrio Mataderos</h1>
+        <p>En el siglo XIX se conocía al barrio como "Nueva Chicago", por su parecido a la ciudad norteamericana caracterizada por su industria de la carne. A comienzos del siglo XX, cambió su nombre por el actual "Mataderos" y su fisonomía se fue modificando pero sin perder la condición de reunir a gente de campo, payadores, pulperías y hasta hitos de la política Argentina.</p>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plazoleta Alfredo Lorenzo Palacios</h1>
+                <p>Ubicado en la calle Acassuso y Saladillo, es un Parque que contiene 1 zona de juego infantil grande al "Aventura por la Selva", también tiene arenero para jugar.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas, también tiene mesas de picnic.</p>
+                <p>Horario: Este Parque está abierto las 24 Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque está la Plaza La Monito y la Plaza Guamini.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital Donación Francisco Santojanni y si necesitas ir a una comisaría, la más cercana es la Comisaría La Matanza Oeste 4° Lomas Del Mirador. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/palacios1.jpg" alt="Foto de Plazoleta Alfredo Lorenzo Palacios" id="imgpalacios">
+            </div>
+        </section>
+        <div id="contenedor-mapa-palacios"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/alberdi1.jpg" alt="Foto de Parque Alberdi" id="imgalberdi">
+            </div>
+            <div id="content-derecha">   
+                <h1>Parque Alberdi</h1>
+                <p>Ubicado en la Av. Directorio y la Av. P° De los Artistas, es un Parque grande que tiene zona de juego infantil, sendero peatonal y una cinta aeróbica, arbolado, anfiteatro y pista de skate, integrando así a toda la familia.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas, también tiene mesas de picnic.</p>
+                <p>Horario: Está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque se encuentra Polideportivos y la Feria de Mataderos. </p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Ex Hospital Salaberry y si necesitas ir a una comisaría, la más cercana es la Policía de la Ciudad Comisaría Comunal 9A. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-alberdi"> </div>
+        <hr>
+    </main>
+    <script src="./components/palacios.js"></script>
+    <script src="./components/alberdi.js"></script>
+    <script src="./components/mapa-palacios.js"></script>
+    <script src="./components/mapa-alberdi.js"></script>
+</body>
+</html>

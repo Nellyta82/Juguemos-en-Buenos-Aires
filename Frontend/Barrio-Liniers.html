@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/liniers.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo">
+            <h3>Juguemos</h3>
+            <h3 class="n2">en BA</h3>
+        </div class="nav-links" >
+            <nav class="nav" id="nav">
+                <div class="nav-links">
+                  <li>
+                    <a href="./index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="menu" >
+                    <a href="./Comunas.html" class="nav-link">Comunas</a>
+                <ul>
+                    <li class="Barrios">
+                        <a href="#Barrios" class="nav-link">Barrios</a>
+                    </li>
+                </ul> 
+                </li>
+                <li>     
+                    <a href="#Contacto" class="nav-link">Contacto</a>
+                </li>
+                <li>     
+                  <a href="./login.html" class="nav-link">Registrarse</a>
+              </li>
+                </div> 
+            </nav>
+            <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>          
+    </header>
+    <main id="recoleta">
+        <h1>Barrio de Liniers</h1>
+        <p>Este barrio toma el nombre de Santiago de Liniers, militar que tuvo un papel importante en la reconquista de Buenos Aires durante las Invasiones Inglesas. Es uno de los centros de transbordo de pasajeros más importantes de Buenos Aires; allí combinan varios medios de transporte y circulan numerosos pasajeros. Cuenta con una terminal de ómnibus de larga distancia.</p>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plazoleta de Isidora</h1>
+                <p>Ubicado en la calle Caaguazú enetre la Av. Larrazábal y Fonrouge, es un Parque que contiene 1 zona de juego infantil grande al estilo medieval.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: De Lunes a Viernes está abierta de 7:30am a 10pm y Sábados y Domingos está abierta de 8:30am a 10:16pm.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque está la Plaza Larrazabal, la Casa de la Cultura de Liniers y sitios para comer como las Medialunas del Abuelo.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital Donación Francisco Santojanni y si necesitas ir a una comisaría, la más cercana es la Policía de la Ciudad - Destacamento Terminal Liniers. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/isidora1.jpg" alt="Foto de Plazoleta Isidora" id="imgisidora">
+            </div>
+        </section>
+        <div id="contenedor-mapa-isidora"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/santojanni1.jpg" alt="Foto de Parque Santojanni" id="imgsantojanni">
+            </div>
+            <div id="content-derecha">   
+                <h1>Parque Santojanni</h1>
+                <p>Ubicado entre las calles Acassuso y Patrón y las calles Murguiondo y Martiniano Leguizamón, es un Parque grande que tiene zona de juego infantil y también hay un Parque para Perros.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque se encuentra el Polideportivo Santojanni con canchas de Tenis, Fútbol, Handbol y Piscina, este parque también está contiguo al Hospital donación Francisco Santojanni. </p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital Donación Francisco Santojanni y si necesitas ir a una comisaría, la más cercana es la Policía de la Ciudad - Destacamento Terminal Liniers. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-santojanni"> </div>
+        <hr>
+    </main>
+    <script src="./components/Isidora.js"></script>
+    <script src="./components/santojanni.js"></script>
+    <script src="./components/mapa-isidora.js"></script>
+    <script src="./components/mapa-santojanni.js"></script>
+</body>
+</html>
