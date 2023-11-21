@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+
+
+
+/* Haciendo Cambios en el Index */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  background-color: #040404;
+}
+
+
+
+.banner {
+  font-family: Roboto, sans-serif;
+  margin-top: 70px;
+  width: 100%;
+  height: 800px;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+@keyframes banner {
+
+  0%,
+  20% {
+    background-image: url(../media/images/jugando\ en\ el\ parque.jpg);
+  }
+
+  25%,
+  45% {
+    background-image: url(../media/images/comuna3.jpg);
+  }
+
+  50%,
+  70% {
+    background-image: url(../media/images/comuna10.jpg);
+  }
+
+  75%,
+  100% {
+    background-image: url(../media/images/comuna6.jpg);
+  }
+}
+
+/* .capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #040404cb;
+} */
+
+.infor {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.infor h1 {
+  color: #ebe6e1;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  background-color: #0404047f;
+  border-radius: 10px;
+}
+
+.infor i {
+  color: #f5f0f0;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+
+.infor a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgb(140, 147, 214);
+  padding: 16px 37px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.infor a:hover {
+  background-color: rgba(239, 239, 239, 0.37);
+  transition: 0.5S;
+  color: blue;
+}
+
+
+/* Destacados*/
+
+
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+
+
+.swiper {
+  margin-top: 40px;
+}
+
+.capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.253);
+}
+
+.swiper-slide {
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  height: 420px;
+  width: 295px;
+  position: relative;
+}
+
+.swiper-slide img {
+
+  width: 295px;
+  border-radius: 15px;
+  height: 420px;
+}
+
+.swiper-txt {
+  position: absolute;
+  padding: 25px;
+
+}
+
+.swiper-txt h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: beige;
+}
+
+.swiper-txt p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: beige;
+}
+
+
+
+
+
+@media (max-width:991px) {
+
+
+
+  .swiper {
+    padding: 0 70px;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
+
+}
