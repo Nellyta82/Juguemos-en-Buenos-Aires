@@ -6,10 +6,11 @@
     padding-left: 16px;
     padding-right: 16px;
     color: rgb(236, 236, 241);
+    background-color: black;
    
     }
 
-.parque-thays{
+.parque-izquierda{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -19,7 +20,7 @@
     margin: auto;
 }
 
-#content-thays{
+#content-izquierda{
     color: rgb(236, 236, 241);
     margin-top: 20px;
     justify-content: center;
@@ -33,7 +34,15 @@
     width: cover;
 }
 
-.parque-vicentelopezyplanes{
+#contenedor-mapa-thays{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+.parque-derecha{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -43,7 +52,7 @@
     margin: auto;
 }
 
-#content-vicente{
+#content-derecha{
     color: rgb(236, 236, 241);
     margin-top: 20px;
     justify-content: center;
@@ -52,35 +61,107 @@
     
 }
 
-.parque-ruben{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-
-#content-ruben{
+#contenedor-mapa{
+    height: 600px;
     color: rgb(236, 236, 241);
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: aliceblue;
+    margin-top: 30px;
     
 }
+
 
 #imgruben{
     height: 300px;
     width: cover;
 }
 
+#contenedor-mapa-ruben{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgparaguay{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-paraguay{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgmujica{
+    height: 350px;
+    width: cover;
+}
+
+#contenedor-mapa-mujica{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgemilio{
+    height: 450px;
+    width: cover;
+}
+
+#contenedor-mapa-emilio{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgrodriguez{
+    height: 400px;
+    width: cover;
+}
+
+#contenedor-mapa-rodriguez{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#contenedor-mapa-miguel{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imghoussay{
+    height: 400px;
+    width: cover;
+}
+
+#contenedor-mapa-bernardo{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+
 /* Haciendo Responsivo el Proyecto */
 
 @media screen and (max-width: 700px) {
 
-    .parque-thays{
+    .parque-izquierda{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         align-items: center;
@@ -90,7 +171,7 @@
         margin: auto;
     }
 
-    .parque-vicentelopezyplanes{
+    .parque-derecha{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         align-items: center;
@@ -100,14 +181,72 @@
         margin: auto;
     }
 
-    .parque-ruben{
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        margin: auto;
+    #imgthays{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-thays{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-ruben{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-mujica{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-paraguay{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-emilio{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-rodriguez{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-miguel{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-bernardo{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
     }
 
 }
