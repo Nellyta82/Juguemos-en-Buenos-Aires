@@ -1,11 +1,11 @@
-var mapavellaneda = L.map('contenedor-mapa-avellaneda').setView([-34.65362965,  -58.4968158795579], 6)
+var mapteran = L.map('contenedor-mapa-teran').setView([	-34.62759335,  -58.5030691966311], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     minZoom: 5, maxZoom: 15,
     updateWhenIdle: true,
     reuseTiles: true
-}).addTo(mapavellaneda)
+}).addTo(mapteran)
 
 var greenIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -34,34 +34,34 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.65362965, -58.4968158795579], {icon: greenIcon}).addTo(mapavellaneda);
-marcador.bindPopup("Parque Avellaneda")
+var marcador = L.marker([-34.6206776, -58.5196433], {icon: greenIcon}).addTo(mapteran);
+marcador.bindPopup("Parque Dr. Juan B.Terán")
 
-var circulo = L.marker([-34.6459499, -58.4743995]).addTo(mapavellaneda)
-circulo.bindPopup("Polideportivo Nicolás Avellaneda")
+var circulo = L.marker([-34.6196569, -58.5181555]).addTo(mapteran)
+circulo.bindPopup("Bonafide")
 
-var hospital = L.marker([-34.6487604, -58.4890118,], {icon: redIcon}).addTo(mapavellaneda);
-hospital.bindPopup("Hospital San Cayetano")
+var hospital = L.marker([-34.6253441, -58.5079185], {icon: redIcon}).addTo(mapteran);
+hospital.bindPopup(" Hospital General de Agudos Dalmacio Vélez Sarsfield")
 
-var comisaria = L.marker([-34.6414421, -58.4765116], {icon: greyIcon}).addTo(mapavellaneda);
-comisaria.bindPopup("Comisaría vecinal 9-C")
+var comisaria = L.marker([-34.6296169, -58.5243258], {icon: greyIcon}).addTo(mapteran);
+comisaria.bindPopup("Comisaría Vecinal 10-B")
 
 
-mapavellaneda.locate({setView: true, maxZoom: 16});
+mapteran.locate({setView: true, maxZoom: 16});
 
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapavellaneda)
+    L.marker(e.latlng).addTo(mapteran)
         .bindPopup("Esta es tú ubicación").openPopup();
 
-    L.circle(e.latlng, radius).addTo(mapavellaneda);
+    L.circle(e.latlng, radius).addTo(mapvillareal);
 }
 
-mapavellaneda.on('locationfound', onLocationFound);
+mapteran.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
     alert(e.message);
 }
 
-mapavellaneda.on('locationerror', onLocationError);
+mapteran.on('locationerror', onLocationError);

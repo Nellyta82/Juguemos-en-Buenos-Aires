@@ -1,11 +1,11 @@
-var mapavellaneda = L.map('contenedor-mapa-avellaneda').setView([-34.65362965,  -58.4968158795579], 6)
+var mapbanff = L.map('contenedor-mapa-banff').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     minZoom: 5, maxZoom: 15,
     updateWhenIdle: true,
     reuseTiles: true
-}).addTo(mapavellaneda)
+}).addTo(mapbanff)
 
 var greenIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -34,34 +34,34 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.65362965, -58.4968158795579], {icon: greenIcon}).addTo(mapavellaneda);
-marcador.bindPopup("Parque Avellaneda")
+var marcador = L.marker([-34.6284895,-58.5212847], {icon: greenIcon}).addTo(mapbanff);
+marcador.bindPopup("Plaza Ciudad de Banff")
 
-var circulo = L.marker([-34.6459499, -58.4743995]).addTo(mapavellaneda)
-circulo.bindPopup("Polideportivo Nicolás Avellaneda")
+var circulo = L.marker([-34.62585,-58.5225933]).addTo(mapbanff)
+circulo.bindPopup("Ateneo Popular de Versailles")
 
-var hospital = L.marker([-34.6487604, -58.4890118,], {icon: redIcon}).addTo(mapavellaneda);
-hospital.bindPopup("Hospital San Cayetano")
+var hospital = L.marker([-34.6253337,-58.5079123], {icon: redIcon}).addTo(mapbanff);
+hospital.bindPopup("Hospital General de Agudos Dalmacio Vélez Sarsfield")
 
-var comisaria = L.marker([-34.6414421, -58.4765116], {icon: greyIcon}).addTo(mapavellaneda);
-comisaria.bindPopup("Comisaría vecinal 9-C")
+var comisaria = L.marker([-34.6295819,-58.5243601], {icon: greyIcon}).addTo(mapbanff);
+comisaria.bindPopup("Comisaría Vecinal 10-B")
 
 
-mapavellaneda.locate({setView: true, maxZoom: 16});
+mapbanff.locate({setView: true, maxZoom: 16});
 
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapavellaneda)
+    L.marker(e.latlng).addTo(mapbanff)
         .bindPopup("Esta es tú ubicación").openPopup();
 
-    L.circle(e.latlng, radius).addTo(mapavellaneda);
+    L.circle(e.latlng, radius).addTo(mapbanff);
 }
 
-mapavellaneda.on('locationfound', onLocationFound);
+mapbanff.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
     alert(e.message);
 }
 
-mapavellaneda.on('locationerror', onLocationError);
+mapbanff.on('locationerror', onLocationError);
