@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/comuna10.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo">
+            <h3>Juguemos</h3>
+            <h3 class="n2">en BA</h3>
+        </div class="nav-links" >
+            <nav class="nav" id="nav">
+                <div class="nav-links">
+                  <li>
+                    <a href="./index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="menu" >
+                    <a href="./Comunas.html" class="nav-link">Comunas</a>
+                <ul>
+                    <li class="Barrios">
+                        <a href="#Barrios" class="nav-link">Barrios</a>
+                    </li>
+                </ul> 
+                </li>
+                <li>     
+                    <a href="#Contacto" class="nav-link">Contacto</a>
+                </li>
+                <li>     
+                  <a href="./login.html" class="nav-link">Registrarse</a>
+              </li>
+                </div> 
+            </nav>
+            <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>          
+    </header>
+    <main id="recoleta">
+        <h1>Barrio Villa Real</h1>
+        <p>Villa Real es uno de los 48 barrios en que se encuentra dividida la Ciudad de Buenos Aires. Se caracteriza por ser un barrio de casas bajas y de ingresos medios. Sus avenidas principales son Gral. Paz, Francisco Beiró, y Lope de Vega. Villa Real es el segundo barrio menos extenso de toda la ciudad, luego de San Telmo y también uno de los que tienen menor población. Con poco más de 14 000 habitantes (2001), es el tercer barrio menos poblado, luego de Versalles y Puerto Madero.</p>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Villa Real</h1>
+                <p>Ubicado entre las calles Bruselas e Irigoyen y José Pedro Varela y Simbrón, es un Parque que contiene 1 zona de juego infantil y parque de calistenia, también tiene un parque para perros, integrando así a toda la familia.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Este parque está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque está la Fundación Museo del Automóvil, diversas escuelas y Club Social.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Centro Médico CEMEV y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 10-B. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/villareal1.jpg" alt="Foto de Plaza Villa Real" id="imgvillareal">
+            </div>
+        </section>
+        <div id="contenedor-mapa-villareal"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/teran.jpg" alt="Foto del Parque Dr. Juan B.Terán" id="imgteran">
+            </div>
+            <div id="content-derecha">   
+                <h1>Parque Dr. Juan B.Terán</h1>
+                <p>Ubicado entre las calles Nogoyá y Melincué y las calles Cnel. José Gordillo y Juán Esteban Martínez, es un Plaza grande que tiene zona de juego infantil, cancha de basket, mesa de picnic y tiene para hacer senderismo, integrando así a toda la familia.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque se encuentra un Bonafide, escuelas y Club Social. </p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital General de Agudos Dalmacio Vélez Sarsfield y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 10-B. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-teran"> </div>
+        <hr>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Las Toscaneras de Villa Real</h1>
+                <p>Ubicado entre las calles Moliere y Virgilio y José Pedro Varela y Cnel Ramón Lista, es un Parque que contiene 1 zona de juego infantil y parque de calistenia, también tiene un parque para perros y cancha de Básquetbol integrando así a toda la familia.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas y también tiene mesa para picnic</p>
+                <p>Horario: Este parque está abierto de 8:40am a 10pm.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque hay Natatorio, Club Social y diversos sitios para comer.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Centro Médico CEMEV y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 10-B. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/toscaneras1.jpg" alt="Foto de Plaza Las Toscaneras de Villa Real" id="imgtoscaneras">
+            </div>
+        </section>
+        <div id="contenedor-mapa-toscaneras"> </div>
+        <hr>
+    </main>
+    <script src="./components/villareal.js"></script>
+    <script src="./components/teran.js"></script>
+    <script src="./components/toscaneras.js"></script>
+    <script src="./components/mapa-villareal.js"></script>
+    <script src="./components/mapa-teran.js"></script>
+    <script src="./components/mapa-toscaneras.js"></script>
+</body>
+</html>

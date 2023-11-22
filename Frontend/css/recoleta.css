@@ -7,6 +7,8 @@
     padding-right: 16px;
     color: rgb(236, 236, 241);
     background-color: black;
+    font-size: 20px;
+    line-height: 1.5;
    
     }
 
@@ -18,6 +20,8 @@
     text-align: center;
     width: 100%;
     margin: auto;
+    /* line-height: 1.5;
+    font-size: 20px; */
 }
 
 #content-izquierda{
@@ -154,6 +158,11 @@
     background-color: aliceblue;
     margin-top: 30px;
     
+}
+
+#imgmonseñor{
+    height: 400px;
+    width: cover;
 }
 
 

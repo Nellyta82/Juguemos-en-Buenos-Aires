@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/comuna10.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo">
+            <h3>Juguemos</h3>
+            <h3 class="n2">en BA</h3>
+        </div class="nav-links" >
+            <nav class="nav" id="nav">
+                <div class="nav-links">
+                  <li>
+                    <a href="./index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="menu" >
+                    <a href="./Comunas.html" class="nav-link">Comunas</a>
+                <ul>
+                    <li class="Barrios">
+                        <a href="#Barrios" class="nav-link">Barrios</a>
+                    </li>
+                </ul> 
+                </li>
+                <li>     
+                    <a href="#Contacto" class="nav-link">Contacto</a>
+                </li>
+                <li>     
+                  <a href="./login.html" class="nav-link">Registrarse</a>
+              </li>
+                </div> 
+            </nav>
+            <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>          
+    </header>
+    <main id="recoleta">
+        <h1>Barrio Versalles</h1>
+        <p>Se trata de un barrio residencial con influencia inglesa que antiguamente se conocía como Monte Castro, pues eran tierras de Don Pedro Fernandez de Castro.
+            En 1911 llega el ferrocarril a la zona y a partir de allí, comienza a llamarse Versalles, por recordar el palacio de Versalles, en Francia.
+            Versalles tiene la mayor cantidad de espacios verdes por habitante y es la zona mas alta de la ciudad. Dicho barrio cuenta con las siguientes construcciones destacables: Biblioteca Belisario Roldán; colegios J. F. Kennedy, Estados Unidos de America y Hudson; ademas del Club Versalles y el Ateneo Popular.</p>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Ciudad Banff</h1>
+                <p>Ubicado entre las Av. Arregui y Lascano y entre las calles Lisboa y Roma, es una Plaza que contiene 1 zona de juego infantil con un mangrullo temático con forma de castillo conformado por dos torres de variada altura, unidas entre sí por puentes con sogas y con juegos lúdicos para los chicos, esta plaza también tiene 1 zona deportiva con canchas basquet, integrando así a toda la familia.</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas, también tiene mesas de picnic</p>
+                <p>Horario: Este parque está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque está el Museo La Glorieta de Versalles, el campo de fútbol Esquina Vélez Fútbol, Esperando la Carroza (Una de las locaciones, casa de Antonio Musicardi y Nora), el Ateneo Popular de Versailles, diversas escuelas y diversos sitios para comer.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital General de Agudos Dalmacio Vélez Sarsfield y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 10-B. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/banff1.jpeg" alt="Plaza Ciudad de Banff" id="imgbanff">
+            </div>
+        </section>
+        <div id="contenedor-mapa-banff"> </div>
+        <hr>
+        </main>
+    <script src="./components/banff.js"></script>
+    <script src="./components/mapa-banff.js"></script>
+</body>
+</html>
