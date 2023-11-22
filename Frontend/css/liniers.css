@@ -1,0 +1,44 @@
+#imgisidora{
+    height: 400px;
+    width: cover;
+}
+
+#imgsantojanni{
+    height: 400px;
+    width: cover;
+}
+
+#contenedor-mapa-isidora{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#contenedor-mapa-santojanni{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 700px) {
+
+    #contenedor-mapa-isidora{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-santojanni{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+}

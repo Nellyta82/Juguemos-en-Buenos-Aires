@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+* {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  
+  }
+    
+
+/* Nav */
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(140, 147, 214);
+    padding: 1% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+
+
+}
+
+
+
+header .logo {
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+header .navbar ul{
+  list-style: none;
+
+ 
+}
+
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+ }
+
+ header .navbar ul li .drop{
+  font-size: 18px;
+  padding: 12px
+ }
+
+header .navbar ul li a{
+  font-size: 13px;
+  padding: 8px;
+  color: #ffffff;
+  display: block;
+  font-family: roboto, sans-serif;
+
+  
+ 
+}
+
+header .navbar ul li a:hover{
+  color: blue;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: rgb(140, 147, 214);
+  display: none;
+
+}
+header .navbar ul li ul li{
+  width: 80%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+  
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover > ul{
+  display:initial;
+
+}
+
+.drop{
+  margin-left: 10px;
+}
+
+#menu{
+  display: none;
+}
+
+#menu-icono{
+  width:25px;
+  color: #ffffff;
+}
+
+header label{
+  font-size: 20px;
+  display: none;
+
+}
+
+@media (max-width:991px){
+    header {
+      padding: 20px;
+
+    }
+
+    header label{
+      display: initial;
+    }
+    
+    header .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgb(140, 147, 214);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: none;
+      cursor: pointer;
+      transition: all .2s linear
+    }
+    .header .navbar ul li{
+      width: 80%;
+    }
+    .header .navbar ul li ul{
+      position: relative;
+      width: 80%;
+    }
+
+    .header .navbar ul li ul li{
+      background-color: #4650d3;
+
+    }
+    .header .navbar ul li ul li ul{
+      width: 100%;
+      left: 0;
+    }
+
+    #menu:checked ~ .navbar{
+      display: initial;
+
+    }
+
+}

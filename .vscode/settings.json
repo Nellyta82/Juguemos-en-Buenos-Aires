@@ -1,3 +1,5 @@
 {
-  "cSpell.words": ["registrese"]
+  "cSpell.words": ["registrese"],
+  "liveServer.settings.port": 5501,
+  "workbench.colorCustomizations": {}
 }
