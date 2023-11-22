@@ -55,6 +55,7 @@ img {
     --escala: 1.2;
     cursor:pointer;
 }
+
 .col:hover {
     -webkit-transform:scale(0.9);transform:scale(0.9);
 }
