@@ -34,6 +34,7 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
+
 var marcador = L.marker([-34.65362965, -58.4968158795579], {icon: greenIcon}).addTo(mapavellaneda);
 marcador.bindPopup("Parque Avellaneda")
 

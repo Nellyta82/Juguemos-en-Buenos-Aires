@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <!--link css de boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Juguemos en BA</title>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-logo">
             <h3>Juguemos</h3>
             <h3 class="n2">en BA</h3>
-        </div class="nav-links" >
-            <nav class="nav" id="nav">
-                <div class="nav-links">
-                    <li>
-                        <a href="./index.html" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="menu" >
-                        <a href="./Comunas.html" class="nav-link">Comunas</a>
+        </div class="nav-links">
+        <nav class="nav" id="nav">
+            <div class="nav-links">
+                <li>
+                    <a href="./index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="menu">
+                    <a href="./Comunas.html" class="nav-link">Comunas</a>
                     <ul>
                         <li class="Barrios">
-                            <a href="#Barrios" class="nav-link">Barrios</a>        
+                            <a href="#Barrios" class="nav-link">Barrios</a>
                         </li>
-                    </ul> 
-                    </li>
-                    <li>     
-                        <a href="#Contacto" class="nav-link">Contacto</a>
-                    </li>
-                    <li>     
-                        <a href="./login.html" class="nav-link">Registrarse</a>
-                    </li>
-                </div> 
-            </nav>
-            <button class="menu-hamburguesa" id="menu-hamburguesa">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>          
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Contacto" class="nav-link">Contacto</a>
+                </li>
+                <li>
+                    <a href="./login.html" class="nav-link">Registrarse</a>
+                </li>
+            </div>
+        </nav>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
     <hr>
     <main>
-        <section id="Inicio">
-            <p>Esta página fue creada por Programadoras Mamás con la necesidad de saber que hacer cada fin de semana con sus hijos, a dónde llevarlos. En vista de que en Buenos Aires se están renovando los Parques que ya existían, quisimos dejar plasmado aquí la actualización de estos, con información de su ubicación, horarios, cómo llegar, y con datos de sitios cercanos a estas Plazas para ir a conocer o comer. Esperamos que esta página sea de su agrado y que puedan encontrar aquí un punto de encuentro familiar y con amigos.</p>
+        <section class="hero__container container" id="Inicio">
+            <h1 class="hero__title">Juguemos en Buenos Aires</h1>
+            <p class="paragraph">Esta página fue creada por madres Programadoras con la necesidad de saber que hacer
+                cada fin de semana con
+                sus hijos, a dónde llevarlos. En vista de que en Buenos Aires se están renovando los Parques que ya
+                existían, quisimos dejar plasmado aquí la actualización de estos, con información de su ubicación,
+                horarios, cómo llegar, y con datos de sitios cercanos a estas Plazas para ir a conocer o comer.
+                Esperamos que esta página sea de su agrado y que puedan encontrar aquí un punto de encuentro familiar y
+                con amigos.
+            </p>
         </section>
     </main>
+
+
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure class="picture-logo">
+                    <a href=""><img src="./media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico" class="img-footer"
+                            alt="logo de la pagina"></a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2 class="footer-subtitle">SOBRE NOSOTROS</h2>
+                <p class="footer-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eaque!
+                </p>
+            </div>
+            <div class="box">
+                <h2 class="footer-subtitle">SIGUENOS</h2>
+                <div class="redes-sociales">
+                    <a href="" class="social"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2023 <b>Juguemos en BA</b> - Todos los Derechos Reservados.</small>
+        </div>
+
+
+    </footer>
+
+
+    <!--scrip fot awesome-->
+    <script src="https://kit.fontawesome.com/f6f8bbcf09.js" crossorigin="anonymous"></script>
+
     <script src="../Frontend/components/NavBar.js"></script>
+
 </body>
+
 </html>
