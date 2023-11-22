@@ -7,7 +7,6 @@
     justify-content: center;
     padding-left: 16px;
     padding-right: 16px;
-   
     }
 
 img {
@@ -15,7 +14,7 @@ img {
 }
 
 .card-body{
-   color: #b8c7e5
+    color: #b8c7e5
 }
 
 .card-footer{
@@ -34,10 +33,10 @@ img {
 
 .col{
     transform: scale(var(--escala, 1));
-  transition: transform 0.25s;
+    transition: transform 0.25s;
 }
 
 .col:hover{
     --escala: 1.2;
     cursor:pointer;
-  }
+}

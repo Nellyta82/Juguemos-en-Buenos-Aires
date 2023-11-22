@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('./footer.css');
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@
     padding: 0px;
     width: 100%;
     scroll-behavior: smooth;
-    background-color: rgb(04, 04, 04)
+    background: rgb(04, 04, 04)
 }
 
 
