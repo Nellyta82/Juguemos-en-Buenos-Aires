@@ -20,8 +20,6 @@
     text-align: center;
     width: 100%;
     margin: auto;
-    /* line-height: 1.5;
-    font-size: 20px; */
 }
 
 #content-izquierda{
@@ -178,6 +176,8 @@
         text-align: center;
         width: 100%;
         margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .parque-derecha{
@@ -188,6 +188,8 @@
         text-align: center;
         width: 100%;
         margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     #imgthays{
