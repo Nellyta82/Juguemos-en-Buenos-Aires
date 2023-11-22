@@ -17,7 +17,6 @@
     padding-left: 16px;
     padding-right: 16px;
     background-color: black;
-   
     }
 
 img {
@@ -30,7 +29,7 @@ img {
 }
 
 .card-body{
-   color: #b8c7e5
+    color: #b8c7e5
 }
 
 .card-footer{
@@ -47,6 +46,15 @@ img {
     color: rgb(236, 236, 241);
 }
 
+.col{
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+
+.col:hover{
+    --escala: 1.2;
+    cursor:pointer;
+}
 .col:hover {
     -webkit-transform:scale(0.9);transform:scale(0.9);
 }
