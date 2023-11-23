@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* background-color: rgb(04, 04, 04) */
+}
+
+#nav{
+    background-color: rgb(140, 147, 214);
+}
+

@@ -1,3 +1,4 @@
+
 #recoleta {
     padding-top: 100px;
     text-align: center;
@@ -7,6 +8,8 @@
     padding-right: 16px;
     color: rgb(236, 236, 241);
     background-color: black;
+    font-size: 20px;
+    line-height: 1.5;
    
     }
 
@@ -156,6 +159,11 @@
     
 }
 
+#imgmonseñor{
+    height: 400px;
+    width: cover;
+}
+
 
 /* Haciendo Responsivo el Proyecto */
 
@@ -169,6 +177,8 @@
         text-align: center;
         width: 100%;
         margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .parque-derecha{
@@ -179,6 +189,8 @@
         text-align: center;
         width: 100%;
         margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     #imgthays{
