@@ -6,6 +6,16 @@
     
 }
 
+#imgavellaneda{
+    height: 400px;
+    width: cover;
+}
+
+#imglatinoamericana{
+    height: 400px;
+    width: cover; 
+}
+
 #contenedor-mapa-latinoamericana{
     height: 600px;
     color: rgb(236, 236, 241);
