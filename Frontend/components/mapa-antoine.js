@@ -1,11 +1,11 @@
-var mapcentenario= L.map('contenedor-mapa-centenario').setView([-34.58308875, -58.3935243201024], 6)
+var mapantoine = L.map('contenedor-mapa-antoine').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     minZoom: 5, maxZoom: 15,
     updateWhenIdle: true,
     reuseTiles: true
-}).addTo(mapcentenario)
+}).addTo(mapantoine)
 
 var greenIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -34,35 +34,35 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapcentenario);
-marcador.bindPopup("Parque Centenario")
+var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapantoine);
+marcador.bindPopup("Plazoleta Antoine Saint Exupery")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapcentenario)
-circulo.bindPopup("Leloir Fundacion Instituto Leloir lucha contra el Dengue")
-
-
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapcentenario);
-hospital.bindPopup("Hospital Naval Dr. Pedro Mallo")
-
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapcentenario);
-comisaria.bindPopup("Comisaría Comunal 6-A")
+var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapantoine)
+circulo.bindPopup("Escuela Normal Superior N° 4  Estanislao Severo Zeballos")
 
 
-mapcentenario.locate({setView: true, maxZoom: 16});
+var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapantoine);
+hospital.bindPopup("Hospital General de Agudos Carlos G Durand")
+
+var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapantoine);
+comisaria.bindPopup("Comisaría Vecinal 6-A")
+
+
+mapantoine.locate({setView: true, maxZoom: 16});
 
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapcentenario)
+    L.marker(e.latlng).addTo(mapantoine)
         .bindPopup("Esta es tú ubicación").openPopup();
 
-    L.circle(e.latlng, radius).addTo(mapcentenario);
+    L.circle(e.latlng, radius).addTo(mapantoine);
 }
 
-mapcentenario.on('locationfound', onLocationFound);
+mapantoine.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
     alert(e.message);
 }
 
-mapcentenario.on('locationerror', onLocationError);
+mapantoine.on('locationerror', onLocationError);
