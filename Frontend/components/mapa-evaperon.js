@@ -1,4 +1,4 @@
-var mapevaperon=L.map('contenedor-mapa-evaperon').setView([-34.58308875, -58.3935243201024], 6)
+var mapevaperon=L.map('contenedor-mapa-evaperon').setView([-34.63313613724656, -58.44382700972585], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,18 +34,18 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapevaperon);
+var marcador = L.marker([-34.63313613724656, -58.44382700972585], {icon: greenIcon}).addTo(mapevaperon);
 marcador.bindPopup(" Parque Chacabuco Zona de juegos Eva Perón")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapevaperon)
-circulo.bindPopup("Leloir Fundacion Instituto Leloir lucha contra el Dengue")
+var circulo = L.marker([-34.63275820669257, -58.44472012622663]).addTo(mapevaperon)
+circulo.bindPopup("Poliideportivo Chacabuco")
 
 
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapevaperon);
-hospital.bindPopup("Hospital Naval Dr. Pedro Mallo")
+var hospital = L.marker([-34.63362613180164, -58.43964746678254], {icon: redIcon}).addTo(mapevaperon);
+hospital.bindPopup("Centro Clinico Parque Chacabuco")
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapevaperon);
-comisaria.bindPopup("Comisaría Comunal 6-A")
+var comisaria = L.marker([-34.62582095213293, -58.447989822883805], {icon: greyIcon}).addTo(mapevaperon);
+comisaria.bindPopup("Comisaría Vecinal 7-B")
 
 
 mapevaperon.locate({setView: true, maxZoom: 16});

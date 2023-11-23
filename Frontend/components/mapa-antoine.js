@@ -1,4 +1,4 @@
-var mapantoine = L.map('contenedor-mapa-antoine').setView([-34.58308875, -58.3935243201024], 6)
+var mapantoine = L.map('contenedor-mapa-antoine').setView([-34.62873236479246, -58.4284834315134], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,18 +34,18 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapantoine);
+var marcador = L.marker([-34.62873236479246, -58.4284834315134], {icon: greenIcon}).addTo(mapantoine);
 marcador.bindPopup("Plazoleta Antoine Saint Exupery")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapantoine)
-circulo.bindPopup("Escuela Normal Superior N° 4  Estanislao Severo Zeballos")
+var circulo = L.marker([-34.62869439505528, -58.42642585032439]).addTo(mapantoine)
+circulo.bindPopup("Federación Caballito")
 
 
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapantoine);
-hospital.bindPopup("Hospital General de Agudos Carlos G Durand")
+var hospital = L.marker([-34.62478138400989, -58.43244571267876], {icon: redIcon}).addTo(mapantoine);
+hospital.bindPopup("Hospital Municipal de Quemados")
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapantoine);
-comisaria.bindPopup("Comisaría Vecinal 6-A")
+var comisaria = L.marker([-34.628067254561394, -58.425129874856914], {icon: greyIcon}).addTo(mapantoine);
+comisaria.bindPopup("Comisaría Vecinal 5-B")
 
 
 mapantoine.locate({setView: true, maxZoom: 16});

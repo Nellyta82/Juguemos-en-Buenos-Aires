@@ -1,4 +1,4 @@
-var mapangel = L.map('contenedor-mapa-angel').setView([-34.58308875, -58.3935243201024], 6)
+var mapangel = L.map('contenedor-mapa-angel').setView([-34.62187885434953, -58.456645346854614], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,17 +34,17 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapangel);
+var marcador = L.marker([-34.62187885434953, -58.456645346854614], {icon: greenIcon}).addTo(mapangel);
 marcador.bindPopup("Plaza-del-angel")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapangel)
+var circulo = L.marker([-34.61724373670915, -58.45454844685487]).addTo(mapangel)
 circulo.bindPopup("Escuela Primaria Común N° 25 - República de Guatemala")
 
 
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapangel);
-hospital.bindPopup("Clínica de la Trinidad Ramos Mejias")
+var hospital = L.marker([-34.6191440935717, -58.458970786583905], {icon: redIcon}).addTo(mapangel);
+hospital.bindPopup("Sanatorio Calcena")
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapangel);
+var comisaria = L.marker([-34.62014539008139, -58.453179904525136], {icon: greyIcon}).addTo(mapangel);
 comisaria.bindPopup("Comisaría Comunal 6")
 
 
@@ -54,11 +54,12 @@ mapangel.locate({setView: true, maxZoom: 16});
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapplazadelangel)
+    L.marker(e.latlng).addTo(mapangel)
         .bindPopup("Esta es tú ubicación").openPopup();
 
     L.circle(e.latlng, radius).addTo(mapangel);
 }
+
 
 mapangel.on('locationfound', onLocationFound);
 
@@ -67,3 +68,7 @@ function onLocationError(e) {
 }
 
 mapangel.on('locationerror', onLocationError);
+
+
+
+
