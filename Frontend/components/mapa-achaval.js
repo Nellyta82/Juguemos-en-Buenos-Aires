@@ -1,4 +1,4 @@
-var mapachaval = L.map('contenedor-mapa-achaval').setView([-34.58308875, -58.3935243201024], 6)
+var mapachaval = L.map('contenedor-mapa-achaval').setView([-34.63417413050152, -58.44526864685398], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,19 +34,19 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapachaval);
+var marcador = L.marker([-34.63417413050152, -58.44526864685398], {icon: greenIcon}).addTo(mapachaval);
 marcador.bindPopup("Parque Chacabuco zona de Juegos Achaval")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapachaval)
-circulo.bindPopup("Universidad Argentina John F. Kennedy")
+var circulo = L.marker([-34.63342419128636, -58.445169986897945]).addTo(mapachaval)
+circulo.bindPopup("Escuela Primaria Común N° 01 - Chacabuco")
 
 
 
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapachaval);
-hospital.bindPopup("Sanatorio Dr Julio Méndez")
+var hospital = L.marker([-34.63136592308513, -58.448835053276454], {icon: redIcon}).addTo(mapachaval);
+hospital.bindPopup("Centro Medico Cuinsa")
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapachaval);
-comisaria.bindPopup("Comisaría Vecinal 6-B")
+var comisaria = L.marker([-34.630398428354255, -58.45822978796993], {icon: greyIcon}).addTo(mapachaval);
+comisaria.bindPopup("Comisaría Comunal 7")
 
 
 mapachaval.locate({setView: true, maxZoom: 16});

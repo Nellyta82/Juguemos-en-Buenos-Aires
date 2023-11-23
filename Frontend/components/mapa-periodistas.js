@@ -1,4 +1,4 @@
-var mapperiodistas= L.map('contenedor-mapa-periodistas').setView([-34.58308875, -58.3935243201024], 6)
+var mapperiodistas= L.map('contenedor-mapa-periodistas').setView([-34.62153376696705, -58.47319404685467], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,19 +34,19 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapperiodistas);
+var marcador = L.marker([-34.62153376696705, -58.47319404685467], {icon: greenIcon}).addTo(mapperiodistas);
 marcador.bindPopup("Plaza de los Periodistas")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapperiodistas)
+var circulo = L.marker([-34.6158447862359, -58.4669871576766]).addTo(mapperiodistas)
 circulo.bindPopup("Centro Cultural La Paternal")
 
 
 
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapperiodistas);
+var hospital = L.marker([-34.623737412736446, -58.46963343151366], {icon: redIcon}).addTo(mapperiodistas);
 hospital.bindPopup("Hospital General de Agudos Dr. Teodoro Álvarez")
 
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapperiodistas);
+var comisaria = L.marker([-34.61593876281608, -58.464965692877364], {icon: greyIcon}).addTo(mapperiodistas);
 comisaria.bindPopup("Comisaría Vecinal 7-C")
 
 
