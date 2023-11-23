@@ -1,11 +1,11 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     width: 100%;
     scroll-behavior: smooth;
     background-color: rgb(04, 04, 04)
-}
+} */
 
 /* Haciendo Cambios en Comunas */
 
@@ -29,16 +29,22 @@ img {
 }
 
 .card-body{
-    color: #b8c7e5
+    
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#title{
+    color: aliceblue;
 }
 
 .card-footer{
-    background-color: rgb(140, 147, 214);
+    background-color: black;
 }
 
 .col .card-footer .text-body-secondary{
     color: rgb(140, 147, 214);
-    background-color:rgb(140, 147, 214) ;
+    background-color: aliceblue ;
 }
 
 .text-body-secondary #enlace{
