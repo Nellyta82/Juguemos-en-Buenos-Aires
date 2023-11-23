@@ -12,9 +12,9 @@ function nuevo() {
 }
 
 function vuelta(){
-  var img = document.getElementById('imgantoinesaint').src = "./media/images/P Exupery 1.jpg";
+  var img = document.getElementById('imgantoinesaint').src = "./media/images/P exupery 2.jpg";
 }
 
 function other() {
-  var img = document.getElementById('imgantoinesaint').src = "./media/images/P exupery 2.jpg";
+  var img = document.getElementById('imgantoinesaint').src = "./media/images/P Exupery 1.jpg";
 }
