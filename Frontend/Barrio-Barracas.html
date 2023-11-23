@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #8c93d6">
+          <a class="navbar-brand" href="#" style="color: aliceblue;">Juguemos en Buenos Aires</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: aliceblue;" href="./login.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: aliceblue;" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="./Comunas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                  Comunas
+                </a>
+                <ul class="dropdown-menu" style="background-color: #8c93d6" style="list-style:none;">
+                    <li><a class="dropdown-item" style="color: aliceblue;" href="./Comunas.html">Comunas</a>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-1.html">Comuna 1</a>
+                  <ul style="list-style:none;">
+                    <li><a style="color: aliceblue;" href="">Retiro</a></li>
+                    <li><a style="color: aliceblue;" href="">San Nicolás</a></li>
+                    <li><a style="color: aliceblue;" href="">Puerto Madero</a></li>
+                    <li><a style="color: aliceblue;" href="">San Telmo</a></li>
+                    <li><a style="color: aliceblue;" href="">Montserrat</a></li>
+                    <li><a style="color: aliceblue;" href="">Constitución</a></li>
+                </ul>
+                  </li>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./Barrio-Recoleta.html">Comuna 2</a></li>
+                  <ul style="list-style:none;">
+                    <li ><a href="./Barrio-Recoleta.html" style="color: aliceblue;">Recoleta</a></li>
+                  </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="">Comuna 3</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Balvanera.html" style="color: aliceblue;">Balvanera </a></li>
+                    <li><a href="./Barrio-SanCristobal.html" style="color: aliceblue;">San Cristóbal</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 4</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="#" style="color: aliceblue;">La Boca</a></li>
+                    <li><a href="#" style="color: aliceblue;">Barracas</a></li>
+                    <li><a href="#" style="color: aliceblue;">Parque Patricios</a></li>
+                    <li><a href="#" style="color: aliceblue;">Nueva Pompeya</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 5</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Almagro</a></li>
+                    <li><a href="" style="color: aliceblue;">Boedo</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-6.html">Comuna 6</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Caballito.html" style="color: aliceblue;">Caballito</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-7.html">Comuna 7</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Flores.html" style="color: aliceblue;">Flores</a></li>
+                    <li><a href="./Barrio-ParqueChacabuco.html" style="color: aliceblue;">Parque Chacabuco</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 8</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Villa Soldati</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Riachuelo</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Lugano</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna 9.html">Comuna 9</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Liniers.html" style="color: aliceblue;">Liniers</a></li>
+                    <li><a href="./Barrio-mataderos.html" style="color: aliceblue;">Mataderos</a></li>
+                    <li><a href="./Barrio-Parque-Avellaneda.html" style="color: aliceblue;">Parque Avellaneda</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna10.html">Comuna 10</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Villa-Real.html" style="color: aliceblue;">Villa Real</a></li>
+                    <li><a href="./Barrio-Montecastro.html" style="color: aliceblue;">Monte Castro</a></li>
+                    <li><a href="./Barrio-Versalles.html" style="color: aliceblue;">Versalles</a></li>
+                    <li><a href="" style="color: aliceblue;">Floresta</a></li>
+                    <li><a href="" style="color: aliceblue;">Vélez Sarsfield</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Luro</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 11</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Villa General Mitre</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Devoto</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa del Parque </a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Santa Rita</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna12.html">Comuna 12</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Coghlan</a></li>
+                    <li><a href="" style="color: aliceblue;">Saavedra</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Urquiza</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Pueyrredón</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 13</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Barrios de Núñez</a></li>
+                    <li><a href="" style="color: aliceblue;">Belgrano</a></li>
+                    <li><a href="" style="color: aliceblue;">Colegiales</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 14</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Palermo</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 15</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Chacarita</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Crespo</a></li>
+                    <li><a href="" style="color: aliceblue;">La Paternal</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Ortúzar</a></li>
+                    <li><a href="" style="color: aliceblue;">Agronomía</a></li>
+                    <li><a href="" style="color: aliceblue;">Parque Chas</a></li>
+                </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    <main id="recoleta">
+        <h1>Barrio de Recoleta</h1>
+        <p>Este Barrio es llamado la 'París Argentina' por su arquitectura, es famosa por los lugares a dónde visitar, como el Cementerio de Recoleta, el Centro cultural de Recoleta, el Ateneo Grand Splendid, la Floralis Genérica, La Facultad de Derecho, la Biblioteca Nacional y entre otros lugares.</p>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Parque Thays</h1>
+                <p>Ubicado en la Avenida Libertador entre Callao y Pueyrredon, es un Parque que contiene 2 zonas de juegos infantiles, y tiene también una zona deportiva, integrando así a toda la familia y a todas las edades.</p>
+                <p>En esta plaza se permiten perros y tiene área para Patinetas y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto las 24 Hs.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque hay gran variedad de sitios para conocer ya que está ubicado en pleno pulmón de Recoleta, entre los sitios a los que se puede ir está: La Facultad de Derecho, Floralis Genérica, Museo Nacional de Bellas Artes, Centro Cultural de Recoleta, Patio Bulrich.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Sanatorio, el más cercano a este Parque es el Sanatorio Agote y si necesitas ir a una comisaría, la más cercana es la Comisaría comunal 2. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/thays1.jpg" alt="Foto de Parque Thays" id="imgthays">
+            </div>
+        </section>
+        <div id="contenedor-mapa-thays"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/vicente1.jpeg" alt="Foto de Parque Vicente López y Planes" id="imgvicente">
+            </div>
+            <div id="content-derecha">   
+                <h1>Parque Vicente López y Planes</h1>
+                <p>Ubicado entre las calles Arenales, Juncal, Montevideo y Paraná, es un Parque que contiene 2 zonas de juegos infantiles, uno para grandes y otro para chicos. También tiene calistenia y canchas de fútbol tenis, integrando así a toda la familia y a todas las edades.</p>
+                <p>En esta plaza se permiten perros y tiene área para Patinetas y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto desde las 8am hasta las 10pm.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque se encuentra el Museo del Holocausto de Buenos Aires, El Ateneo Grand Splendid, la Plaza Rodríguez Peña, tiendas para comer como Rapanui y Quotidiano y la Avenida Santa Fe con gran variedad de tiendas </p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa"> </div>
+        <hr>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Rubén Darío</h1>
+                <p>Ubicado entre la Avenida Libertador y Avenida Pres. Figueroa Alcorta y la calle Austria, es un Parque que contiene zona de juegos infantiles con arenero para los más pequeños y muchas hamacas!!!.</p>
+                <p>En esta plaza se permiten perros y tiene área para Patinetas y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto desde las 8am hasta las 8pm.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque hay gran variedad de sitios para conocer, ya que está ubicado en pleno pulmón de Recoleta, entre los sitios a los que se puede ir está: La Facultad de Derecho, Floralis Genérica, Museo Nacional de Bellas Artes y la Biblioteca Nacional.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/ruben1.jpeg" alt="Foto de Parque Rubén Darío" id="imgruben">
+            </div>
+        </section>
+        <div id="contenedor-mapa-ruben"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/mujica2.jpg" alt="Foto de Parque Mujica Lainez" id="imgmujica">
+            </div>
+            <div id="content-derecha">   
+                <h1>Plazoleta Mujica Lainez</h1>
+                <p>Ubicado entre las calles Vicente Lópes y Junín, es un Parque en forma de Robot. También tiene calistenia y canchas de fútbol tenis, integrando así a toda la familia y a todas las edades.</p>
+                <p>En esta plaza es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto desde las 9am hasta las 8pm.</p>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque se encuentra el Recoleta Urban Mall, el Cementerio de Recoleta, el Centro Cultural de Recoleta, variedad de Restaurantes y la Avenida Las Heras con gran variedad de tiendas </p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Sanatorio, el más cercano a este Parque es el Sanatorio Agote y si necesitas ir a una comisaría, la más cercana es la Comisaría comunal 2. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-mujica"> </div>
+        <hr>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza República del Paraguay</h1>
+                <p>Ubicado en la calle Peña entre las calles Larrea y Barrientos, es un Parque con gran espacio para que los chicos jueguen</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto las 24 Hs.</p>
+                <p>Qué conocer cerca del Parque: Este Parque está cerca muy cerca de la Plaza Teniente General Emilio Mitre, también hay gran variedad de sitios para comer como Mc Donald`s, Le Moulin de la Fleur, Helados Búffala, entre otros, ya que está muy cerca de la Av. Las Heras y la Av. Pueyrredon. También está cerca y se puede ir a conocer el Recoleta Urban Mall.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/paraguay1.jpg" alt="Foto de Parque Repuública del Paraguay" id="imgparaguay">
+            </div>
+        </section>
+        <div id="contenedor-mapa-paraguay"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/emilio1.jpg" alt="Foto de Parque Emilio Mitre" id="imgemilio">
+            </div>
+            <div id="content-derecha">   
+                <h1>Plaza Teniente General Emilio Mitre</h1>
+                <p>Ubicado entre las calles José Andrés Pacheco de Melo, Av. Pueyrredón y Av. Las Heras. Esta plaza está conformada por un Parque y un calesita para niños, también tiene un Parque calistenia, una plaza para perros y allí se realiza un mercado de alimentos semanal, por lo tanto, es una plaza a la que puede ir toda la familia y todas las edades.</p>
+                <p>Esta plaza es accesible para personas que se encuentran en sillas de ruedas, tiene mesas de picnic y se permiten perros, también tiene estación de ecobicis.</p>
+                <p>Horario: Está abierto desde las 7:30am hasta las 9pm. y los domingos está abierta las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Esta plaza se encuentra contigua a la Universidad UBA de Ingenieria, también está muy cerca la Plaza República de Paraguay, también se puede ir a conocer la Biblioteca Nacional, el Recoleta Urban Mall, el Cementerio de Recoleta y variedad de Restaurantes. Cabe destacar que allí se encuentra la estación de subte de línea H. </p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-emilio"> </div>
+        <hr>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Rodríguez Peña</h1>
+                <p>Ubicado entre la Av. Callao y la calle Rodriguez Peña y entre las calle Paraguay y Marcelo T de Alvear, es un Parque con gran espacio para que los chicos jueguen, también tiene dos canchas de Fútbol Tenis, una plaza para perros</p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas</p>
+                <p>Horario: Está abierto desde las 9am hasta las 8:30pm.</p>
+                <p>Qué conocer cerca del Parque: Este Parque está cerca muy cerca del Museo del Holocausto de Buenos Aires, también está cerca del Ateneo Grand Splendid, por estar en la Av. Callao, hay gran variedad de sitios para comer como Helados Daniel, The Coffee Store, Mc Donald`s, Café Martínez, entre otros.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital de Clínicas y si necesitas ir a una comisaría, la más cercana es la Policía de la Ciudad. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/rodriguez1.jpg" alt="Foto de Parque Rodríguez Peña" id="imgrodriguez">
+            </div>
+        </section>
+        <div id="contenedor-mapa-rodriguez"> </div>
+        <hr>
+        <section class="parque-derecha">  
+            <div >
+                <img src="./media/images/monseñor1.jpg" alt="Foto de Parque Monseñor Miguel de Andrea" id="imgmonseñor">
+            </div>
+            <div id="content-derecha">   
+                <h1>Plaza Monseñor Miguel de Andrea</h1>
+                <p>Ubicado entre la Av. Córdoba y la calle Parguay y entre las calles Jean Jaures y Tomás de Anchorena. Esta plaza está conformada por un Parque y una calesita para niños, también tiene un Parque calistenia, una plaza para perros, mesas de pícnic y allí se realiza un mercado de alimentos semanal, por lo tanto, es una plaza a la que puede ir toda la familia y todas las edades.</p>
+                <p>Esta plaza es accesible para personas que se encuentran en sillas de ruedas y se permiten perros, también tiene estación de ecobicis.</p>
+                <p>Horario: Está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Esta plaza se encuentra cerca del Museo Casa Carlos Gardel, el Abasto Shopping, Supermercado Coto y variedad de Restaurantes como Starbucks, Panadería Venezolana Donna, Heladería Grido, entre otros. </p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital General de Niños R. Gutiérrez y si necesitas ir a una comisaría, la más cercana es la Policía de la Ciudad - Comisaría Vecinal 2-B. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>  
+            </div>
+        </section>
+        <div id="contenedor-mapa-miguel"> </div>
+        <hr>
+        <section class="parque-izquierda">  
+            <div id="content-izquierda">
+                <h1>Plaza Dr. Bernardo Houssay</h1>
+                <p>Ubicado entre la Av. Córdoba Paraguay y entre las calles Junín y Uriburu. Esta plaza tiene un Parque pequeño, está contiguo al Hospital de Clínicas y también se puede encontrar allí un cine, patio de comidas y una parroquia en el lugar </p>
+                <p>En esta plaza se permiten perros y es accesible para personas que se encuentran en sillas de ruedas, tiene área para patinetas y mesas de picnic</p>
+                <p>Horario: Está abierto las 24Hs.</p>
+                <p>Qué conocer cerca del Parque: Este Parque está cerca muy cerca de la Facultad de Medicina y de Odontología de la UBA, también está muy cerca el Museo del Agua, también hay gran variedad de sitios para comer como Tostado Café Club, Hell's Pizza, Mc Donald's entre otros, ya que dentro de la Plaza está un Paseo de Comidas y también está el cine Cinépolis.</p>
+                <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital de Clínicas y si necesitas ir a una comisaría, la más cercana es la Comisaría Comunal 3-C. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            </div>
+            <div>   
+                <img src="./media/images/Houssay1.jpg" alt="Foto de Parque Bernardo Houssay" id="imghoussay">
+            </div>
+        </section>
+        <div id="contenedor-mapa-bernardo"> </div>
+        <hr>
+        <footer id="Contacto">
+            <ul>
+                <li>
+                    <button onclick="window.location.href='https://www.instagram.com/juguemos.en.ba/';"><i class="fa-brands fa-instagram fa-beat" ></i></button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='https://twitter.com/JuguemosenBA';" ><i class="fa-brands fa-x-twitter fa-beat"></i></button>
+                </li>
+                <li>
+                    <a href="mailto:juguemos.ba@gmail.com"><button i class="fa-regular fa-envelope fa-beat-fade"></i></button></a>
+                </li>
+            </ul> 
+        </footer>
+    
+    </main>
+       <script src="./components/recoleta.js"></script>
+    <script src="./components/vicente.js"></script>
+    <script src="./components/mapa.js"></script>
+    <script src="../Frontend/components/NavBar.js"></script>
+    <script src="./components/ruben.js"></script>
+    <script src="./components/mujica.js"></script>
+    <script src="./components/mapa-thays.js"></script>
+    <script src="./components/emilio.js"></script>
+    <script src="./components/mapa-ruben.js"></script>
+    <script src="./components/rodriguez.js"></script>
+    <script src="./components/monseñor.js"></script>
+    <script src="./components/houssay.js"></script>
+    <script src="./components/mapa-mujica.js"></script>
+    <script src="./components/mapa-paraguay.js"></script>
+    <script src="./components/mapa-emilio.js"></script>
+    <script src="./components/mapa-rodriguez.js"></script>
+    <script src="./components/mapa-miguel.js"></script>
+    <script src="./components/mapa-bernardo.js"></script>
+</body>
+</html>
