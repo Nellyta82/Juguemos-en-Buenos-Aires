@@ -1,11 +1,11 @@
-var mapcentenario= L.map('contenedor-mapa-centenario').setView([-34.58308875, -58.3935243201024], 6)
+var mapangel = L.map('contenedor-mapa-angel').setView([-34.58308875, -58.3935243201024], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     minZoom: 5, maxZoom: 15,
     updateWhenIdle: true,
     reuseTiles: true
-}).addTo(mapcentenario)
+}).addTo(mapangel)
 
 var greenIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -34,35 +34,36 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapcentenario);
-marcador.bindPopup("Parque Centenario")
+var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapangel);
+marcador.bindPopup("Plaza-del-angel")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapcentenario)
-circulo.bindPopup("Leloir Fundacion Instituto Leloir lucha contra el Dengue")
-
-
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapcentenario);
-hospital.bindPopup("Hospital Naval Dr. Pedro Mallo")
-
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapcentenario);
-comisaria.bindPopup("Comisaría Comunal 6-A")
+var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapangel)
+circulo.bindPopup("Escuela Primaria Común N° 25 - República de Guatemala")
 
 
-mapcentenario.locate({setView: true, maxZoom: 16});
+var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapangel);
+hospital.bindPopup("Clínica de la Trinidad Ramos Mejias")
+
+var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapangel);
+comisaria.bindPopup("Comisaría Comunal 6")
+
+
+mapangel.locate({setView: true, maxZoom: 16});
+
 
 function onLocationFound(e) {
     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(mapcentenario)
+    L.marker(e.latlng).addTo(mapplazadelangel)
         .bindPopup("Esta es tú ubicación").openPopup();
 
-    L.circle(e.latlng, radius).addTo(mapcentenario);
+    L.circle(e.latlng, radius).addTo(mapangel);
 }
 
-mapcentenario.on('locationfound', onLocationFound);
+mapangel.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
     alert(e.message);
 }
 
-mapcentenario.on('locationerror', onLocationError);
+mapangel.on('locationerror', onLocationError);

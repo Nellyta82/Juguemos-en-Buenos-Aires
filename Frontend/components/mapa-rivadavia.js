@@ -40,20 +40,12 @@ marcador.bindPopup("Parque Rivadavia")
 var circulo = L.marker([-34.5841625, -58.390646]).addTo(maprivadavia)
 circulo.bindPopup("Escuela Normal Superior N° 4  Estanislao Severo Zeballos")
 
-// var circulo = L.marker([34.5817742, -58.3941235]).addTo(maprivadavia)
-// circulo.bindPopup("Floralis Genérica")
-
-// var circulo = L.marker([-34.5840068,, -58.3931816]).addTo(maprivadavia)
-// circulo.bindPopup("Museo Nacional de Bellas Artes")
-
-// var circulo = L.marker([-34.5865211, -58.3917881]).addTo(maprivadavia)
-// circulo.bindPopup("Centro Cultural de Recoleta")
 
 var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(maprivadavia);
 hospital.bindPopup("Hospital General de Agudos Carlos G Durand")
 
 var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(maprivadavia);
-comisaria.bindPopup("Comisaría Comunal 6-A")
+comisaria.bindPopup("Comisaría Vecinal 6-A")
 
 
 maprivadavia.locate({setView: true, maxZoom: 16});

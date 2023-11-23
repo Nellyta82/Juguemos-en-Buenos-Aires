@@ -97,9 +97,6 @@
 }
 
 
-
-
-
 #contenedor-mapa-giordano{
     height: 600px;
     color: rgb(236, 236, 241);
@@ -110,10 +107,82 @@
 
 
 
-#contenedor-mapa{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
+
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 700px) {
+
+    .parque-rivadavia{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .parque-centenario{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .plaza-giordanobruno{
     
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    
+    
+    }
+
+    #imgcentenario{
+        height: 250px;
+        width: cover;
+    }
+
+    #imggiordanobruno{
+        height: 250px;
+        width: cover;
+    
+    }
+
+    #imgrivadavia{
+        height: 250px;
+        width: cover;
+    }
+    
+
+    #contenedor-mapa-rivadavia{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-centenario{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-giordano{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+   
+
 }
