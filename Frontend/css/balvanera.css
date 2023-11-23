@@ -1,0 +1,192 @@
+#balvanera {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    background-color: black;
+   
+    }
+
+.parque-izquierda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-izquierda{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgvelasco{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-velascoibarra{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+.parque-derecha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-derecha{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#contenedor-mapa-primerodemayo{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+
+#imgprimerodemayo{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-manzana66{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgmanzana66{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-paraguay{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 700px) {
+
+    .parque-izquierda{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .parque-derecha{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #imgthays{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-thays{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-ruben{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-mujica{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-paraguay{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-emilio{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-rodriguez{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-miguel{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-bernardo{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+}
