@@ -1,0 +1,64 @@
+#contacto {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    background-color: black;
+    font-size: 20px;
+    line-height: 1.5;
+   
+    }
+
+    #contacto2{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    font-size: 20px;
+    line-height: 1.5;
+   
+    }
+    
+    #enlace{
+        text-decoration: none;
+        
+    }
+    
+
+    .card{
+        width: 400px;
+        background-color: black;
+    }
+
+
+    .card-img-top{
+        background-size: cover;
+        height: 400px;
+    }
+
+    button{
+        color: rgb(140, 147, 214);
+    }
+
+    .card{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .card{
+            width: 250px;
+        }
+    }
+
+    
+
+    
+      
