@@ -70,7 +70,7 @@ k */
 
 
 footer{
-    height: 90px;
+    height: 60px;
     /* width: 100%; */
     /* background-color: black;
     justify-content: space-between;
@@ -79,7 +79,7 @@ footer{
 }
 
 button{
-    height: 50px;
+    height: 60px;
     font-size: 150px;
     border: none;
     justify-content: space-around;
@@ -94,7 +94,7 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 90px;
+    height: 60px;
     margin: 20px; 
     padding: 20px;
    
@@ -118,7 +118,11 @@ button{
 
 /* Haciendo Responsivo el Proyecto */
 
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 500px) {
+    p{
+        font-size: 12px;
+    }
+}
 
 
 
