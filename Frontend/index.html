@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/recoleta.css">
-    <link rel="stylesheet" href="./css/comunas.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>Juguemos en BA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/recoleta.css">
+  <link rel="stylesheet" href="./css/comunas.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Juguemos en BA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>
+  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" style="background-color: #8c93d6">
-          <a class="navbar-brand" href="#" style="color: aliceblue;">Juguemos en Buenos Aires</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: aliceblue;" href="./login.html">Registro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: aliceblue;" href="./Contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item dropdown" >
-                <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="./Comunas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
-                  Comunas
-                </a>
-                <ul class="dropdown-menu" style="background-color: #8c93d6" style="list-style:none;">
-                    <li><a class="dropdown-item" style="color: aliceblue;" href="./Comunas.html">Comunas</a>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-1.html">Comuna 1</a>
+      <div class="container-fluid" style="background-color: #8c93d6">
+        <a class="navbar-brand" href="#" style="color: aliceblue;">Juguemos en Buenos Aires</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: aliceblue;" href="../login completo/registro_user.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: aliceblue;" href="./Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="./Comunas.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Comunas
+              </a>
+              <ul class="dropdown-menu" style="background-color: #8c93d6" style="list-style:none;">
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./Comunas.html">Comunas</a>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-1.html">Comuna 1</a>
                   <ul style="list-style:none;">
                     <li><a style="color: aliceblue;" href="">Retiro</a></li>
                     <li><a style="color: aliceblue;" href="">San Nicolás</a></li>
@@ -48,152 +57,153 @@
                     <li><a style="color: aliceblue;" href="">San Telmo</a></li>
                     <li><a style="color: aliceblue;" href="">Montserrat</a></li>
                     <li><a style="color: aliceblue;" href="">Constitución</a></li>
-                </ul>
-                  </li>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./Barrio-Recoleta.html">Comuna 2</a></li>
-                  <ul style="list-style:none;">
-                    <li ><a href="./Barrio-Recoleta.html" style="color: aliceblue;">Recoleta</a></li>
                   </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="">Comuna 3</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="./Barrio-Balvanera.html" style="color: aliceblue;">Balvanera </a></li>
-                    <li><a href="./Barrio-SanCristobal.html" style="color: aliceblue;">San Cristóbal</a></li>
+                </li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./Barrio-Recoleta.html">Comuna 2</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Recoleta.html" style="color: aliceblue;">Recoleta</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 4</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="#" style="color: aliceblue;">La Boca</a></li>
-                    <li><a href="#" style="color: aliceblue;">Barracas</a></li>
-                    <li><a href="#" style="color: aliceblue;">Parque Patricios</a></li>
-                    <li><a href="#" style="color: aliceblue;">Nueva Pompeya</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="">Comuna 3</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Balvanera.html" style="color: aliceblue;">Balvanera </a></li>
+                  <li><a href="./Barrio-SanCristobal.html" style="color: aliceblue;">San Cristóbal</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 5</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Almagro</a></li>
-                    <li><a href="" style="color: aliceblue;">Boedo</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 4</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="#" style="color: aliceblue;">La Boca</a></li>
+                  <li><a href="#" style="color: aliceblue;">Barracas</a></li>
+                  <li><a href="#" style="color: aliceblue;">Parque Patricios</a></li>
+                  <li><a href="#" style="color: aliceblue;">Nueva Pompeya</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-6.html">Comuna 6</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="./Barrio-Caballito.html" style="color: aliceblue;">Caballito</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 5</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Almagro</a></li>
+                  <li><a href="" style="color: aliceblue;">Boedo</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-7.html">Comuna 7</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="./Barrio-Flores.html" style="color: aliceblue;">Flores</a></li>
-                    <li><a href="./Barrio-ParqueChacabuco.html" style="color: aliceblue;">Parque Chacabuco</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-6.html">Comuna 6</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Caballito.html" style="color: aliceblue;">Caballito</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 8</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Villa Soldati</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Riachuelo</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Lugano</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-7.html">Comuna 7</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Flores.html" style="color: aliceblue;">Flores</a></li>
+                  <li><a href="./Barrio-ParqueChacabuco.html" style="color: aliceblue;">Parque Chacabuco</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna 9.html">Comuna 9</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="./Barrio-Liniers.html" style="color: aliceblue;">Liniers</a></li>
-                    <li><a href="./Barrio-mataderos.html" style="color: aliceblue;">Mataderos</a></li>
-                    <li><a href="./Barrio-Parque-Avellaneda.html" style="color: aliceblue;">Parque Avellaneda</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 8</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Villa Soldati</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Riachuelo</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Lugano</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna10.html">Comuna 10</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="./Barrio-Villa-Real.html" style="color: aliceblue;">Villa Real</a></li>
-                    <li><a href="./Barrio-Montecastro.html" style="color: aliceblue;">Monte Castro</a></li>
-                    <li><a href="./Barrio-Versalles.html" style="color: aliceblue;">Versalles</a></li>
-                    <li><a href="./Barrio-Floresta.html" style="color: aliceblue;">Floresta</a></li>
-                    <li><a href="./Barrio-Vélez.html" style="color: aliceblue;">Vélez Sarsfield</a></li>
-                    <li><a href="./Barrio-Villaluro.html" style="color: aliceblue;">Villa Luro</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna 9.html">Comuna 9</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Liniers.html" style="color: aliceblue;">Liniers</a></li>
+                  <li><a href="./Barrio-mataderos.html" style="color: aliceblue;">Mataderos</a></li>
+                  <li><a href="./Barrio-Parque-Avellaneda.html" style="color: aliceblue;">Parque Avellaneda</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 11</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Villa General Mitre</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Devoto</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa del Parque </a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Santa Rita</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna10.html">Comuna 10</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="./Barrio-Villa-Real.html" style="color: aliceblue;">Villa Real</a></li>
+                  <li><a href="./Barrio-Montecastro.html" style="color: aliceblue;">Monte Castro</a></li>
+                  <li><a href="./Barrio-Versalles.html" style="color: aliceblue;">Versalles</a></li>
+                  <li><a href="./Barrio-Floresta.html" style="color: aliceblue;">Floresta</a></li>
+                  <li><a href="./Barrio-Vélez.html" style="color: aliceblue;">Vélez Sarsfield</a></li>
+                  <li><a href="./Barrio-Villaluro.html" style="color: aliceblue;">Villa Luro</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna12.html">Comuna 12</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Coghlan</a></li>
-                    <li><a href="" style="color: aliceblue;">Saavedra</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Urquiza</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Pueyrredón</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 11</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Villa General Mitre</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Devoto</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa del Parque </a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Santa Rita</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 13</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Barrios de Núñez</a></li>
-                    <li><a href="" style="color: aliceblue;">Belgrano</a></li>
-                    <li><a href="" style="color: aliceblue;">Colegiales</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna12.html">Comuna 12</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Coghlan</a></li>
+                  <li><a href="" style="color: aliceblue;">Saavedra</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Urquiza</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Pueyrredón</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 14</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Palermo</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 13</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Barrios de Núñez</a></li>
+                  <li><a href="" style="color: aliceblue;">Belgrano</a></li>
+                  <li><a href="" style="color: aliceblue;">Colegiales</a></li>
                 </ul>
-                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 15</a></li>
-                  <ul style="list-style:none;">
-                    <li><a href="" style="color: aliceblue;">Chacarita</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Crespo</a></li>
-                    <li><a href="" style="color: aliceblue;">La Paternal</a></li>
-                    <li><a href="" style="color: aliceblue;">Villa Ortúzar</a></li>
-                    <li><a href="" style="color: aliceblue;">Agronomía</a></li>
-                    <li><a href="" style="color: aliceblue;">Parque Chas</a></li>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 14</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Palermo</a></li>
                 </ul>
+                <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 15</a></li>
+                <ul style="list-style:none;">
+                  <li><a href="" style="color: aliceblue;">Chacarita</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Crespo</a></li>
+                  <li><a href="" style="color: aliceblue;">La Paternal</a></li>
+                  <li><a href="" style="color: aliceblue;">Villa Ortúzar</a></li>
+                  <li><a href="" style="color: aliceblue;">Agronomía</a></li>
+                  <li><a href="" style="color: aliceblue;">Parque Chas</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-</header>
-    <main>
-        <section>
-            <div class="banner">
-                <div class="capa"></div>
-                <div class="infor">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="banner">
+        <div class="capa"></div>
+        <div class="infor">
 
-<<<<<<< HEAD
-
-    <footer class="footer">
-        <div class="grupo-1">
-            <div class="box">
+          <<<<<<< HEAD <footer class="footer">
+            <div class="grupo-1">
+              <div class="box">
                 <figure class="picture-logo">
-                    <a href=""><img src="./media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico" class="img-footer"
-                            alt="logo de la pagina"></a>
+                  <a href=""><img src="./media/icons/6488LogoJuguemosEnBuenosAires-sinfondo.ico" class="img-footer"
+                      alt="logo de la pagina"></a>
                 </figure>
-            </div>
-            <div class="box">
+              </div>
+              <div class="box">
                 <h2 class="footer-subtitle">SOBRE NOSOTROS</h2>
                 <p class="footer-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eaque!
                 </p>
-            </div>
-            <div class="box">
+              </div>
+              <div class="box">
                 <h2 class="footer-subtitle">SÍGUENOS</h2>
                 <div class="redes-sociales">
-                    <a href="" class="social"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
-                    <a href="" class="social"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                    <a href="" class="social"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-=======
-                    <h1>Te invito a conocer las mejores plazas de <b>Buenos Aires</b></h1>
-                    <a href="./Comunas.html">Ver más</a>
->>>>>>> 8b94558c815419e77c34055744c1c417b20c0c1b
+                  <a href="" class="social"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                  <a href="" class="social"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                  <a href="" class="social"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                  =======
+                  <h1>Te invito a conocer las mejores plazas de <b>Buenos Aires</b></h1>
+                  <a href="./Comunas.html">Ver más</a>
+                  >>>>>>> 8b94558c815419e77c34055744c1c417b20c0c1b
                 </div>
-            </div>
-        </section>
-        <footer id="Contacto">
-          <p>Síguenos en nuestras redes!!!</p>
-          <div>
-            <ul>
-                <li>
-                    <button onclick="window.location.href='https://www.instagram.com/juguemos.en.ba/';"><i class="fa-brands fa-instagram fa-beat" ></i></button>
-                </li>
-                <li>
-                    <button onclick="window.location.href='https://twitter.com/JuguemosenBA';" ><i class="fa-brands fa-x-twitter fa-beat"></i></button>
-                </li>
-                <li>
-                    <a href="mailto:juguemos.ba@gmail.com"><button i class="fa-regular fa-envelope fa-beat-fade"></i></button></a>
-                </li>
-            </ul> 
-          </div>
-        </footer>
-    </main>
-    <!-- <script src="./components/inde.js"></script> -->
-    <!-- <script src="../Frontend/components/NavBar.js"></script> -->
+              </div>
+    </section>
+    <footer id="Contacto">
+      <p>Síguenos en nuestras redes!!!</p>
+      <div>
+        <ul>
+          <li>
+            <button onclick="window.location.href='https://www.instagram.com/juguemos.en.ba/';"><i
+                class="fa-brands fa-instagram fa-beat"></i></button>
+          </li>
+          <li>
+            <button onclick="window.location.href='https://twitter.com/JuguemosenBA';"><i
+                class="fa-brands fa-x-twitter fa-beat"></i></button>
+          </li>
+          <li>
+            <a href="mailto:juguemos.ba@gmail.com"><button i
+                class="fa-regular fa-envelope fa-beat-fade"></i></button></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <!-- <script src="./components/inde.js"></script> -->
+  <!-- <script src="../Frontend/components/NavBar.js"></script> -->
 </body>
 
 </html>
