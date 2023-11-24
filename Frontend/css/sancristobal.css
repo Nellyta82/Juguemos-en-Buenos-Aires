@@ -29,12 +29,12 @@
     
 }
 
-#imgthays{
+#imgmartin{
     height: 300px;
     width: cover;
 }
 
-#contenedor-mapa-thays{
+#contenedor-mapa-martinfierro{
     height: 600px;
     color: rgb(236, 236, 241);
     background-color: aliceblue;
@@ -61,7 +61,7 @@
     
 }
 
-#contenedor-mapa{
+#contenedor-mapa-franciscocanaro{
     height: 600px;
     color: rgb(236, 236, 241);
     background-color: aliceblue;
@@ -70,91 +70,12 @@
 }
 
 
-#imgruben{
+#imgfrancisco{
     height: 300px;
     width: cover;
 }
 
-#contenedor-mapa-ruben{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
 
-#imgparaguay{
-    height: 300px;
-    width: cover;
-}
-
-#contenedor-mapa-paraguay{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
-
-#imgmujica{
-    height: 350px;
-    width: cover;
-}
-
-#contenedor-mapa-mujica{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
-
-#imgemilio{
-    height: 450px;
-    width: cover;
-}
-
-#contenedor-mapa-emilio{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
-
-#imgrodriguez{
-    height: 400px;
-    width: cover;
-}
-
-#contenedor-mapa-rodriguez{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
-
-#contenedor-mapa-miguel{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
-
-#imghoussay{
-    height: 400px;
-    width: cover;
-}
-
-#contenedor-mapa-bernardo{
-    height: 600px;
-    color: rgb(236, 236, 241);
-    background-color: aliceblue;
-    margin-top: 30px;
-    
-}
 
 /* Haciendo Responsivo el Proyecto */
 
@@ -180,7 +101,7 @@
         margin: auto;
     }
 
-    #imgthays{
+    #imgmartin{
         height: 250px;
         width: cover;
     }
@@ -192,56 +113,14 @@
         margin-top: 30px;   
     }
 
-    #contenedor-mapa-thays{
+    #contenedor-mapa-martinfierro{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
         margin-top: 30px;   
     }
 
-    #contenedor-mapa-ruben{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-mujica{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-paraguay{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-emilio{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-rodriguez{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-miguel{
-        height: 400px;
-        color: rgb(236, 236, 241);
-        background-color: aliceblue;
-        margin-top: 30px;   
-    }
-
-    #contenedor-mapa-bernardo{
+    #contenedor-mapa-franciscocanaro{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
