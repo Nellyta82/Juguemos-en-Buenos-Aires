@@ -1,4 +1,4 @@
-var mapcentenario= L.map('contenedor-mapa-centenario').setView([-34.58308875, -58.3935243201024], 6)
+var mapcentenario= L.map('contenedor-mapa-centenario').setView([-34.605957890548154, -58.43537099103152], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -34,26 +34,18 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-var marcador = L.marker([-34.5847906, -58.3896969], {icon: greenIcon}).addTo(mapcentenario);
+var marcador = L.marker([-34.605957890548154, -58.43537099103152], {icon: greenIcon}).addTo(mapcentenario);
 marcador.bindPopup("Parque Centenario")
 
-var circulo = L.marker([-34.5841625, -58.390646]).addTo(mapcentenario)
+var circulo = L.marker([-34.60420995703827, -58.43391889898681]).addTo(mapcentenario)
 circulo.bindPopup("Leloir Fundacion Instituto Leloir lucha contra el Dengue")
 
-// var circulo = L.marker([34.5817742, -58.3941235]).addTo(maprivadavia)
-// circulo.bindPopup("Floralis Genérica")
 
-// var circulo = L.marker([-34.5840068,, -58.3931816]).addTo(maprivadavia)
-// circulo.bindPopup("Museo Nacional de Bellas Artes")
-
-// var circulo = L.marker([-34.5865211, -58.3917881]).addTo(maprivadavia)
-// circulo.bindPopup("Centro Cultural de Recoleta")
-
-var hospital = L.marker([-34.5854054, -58.3949945], {icon: redIcon}).addTo(mapcentenario);
+var hospital = L.marker([-34.60493404249014, -58.43291045850368], {icon: redIcon}).addTo(mapcentenario);
 hospital.bindPopup("Hospital Naval Dr. Pedro Mallo")
 
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(mapcentenario);
-comisaria.bindPopup("Comisaría Comunal 6-A")
+var comisaria = L.marker([-34.60887863578499, -58.43938594685537], {icon: greyIcon}).addTo(mapcentenario);
+comisaria.bindPopup("Comisaría Vecinal 6-A")
 
 
 mapcentenario.locate({setView: true, maxZoom: 16});

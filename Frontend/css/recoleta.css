@@ -212,11 +212,21 @@
         margin-top: 30px;   
     }
 
+    #imgruben{
+        height: 250px;
+        width: cover;
+    }
+
     #contenedor-mapa-ruben{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
         margin-top: 30px;   
+    }
+
+    #imgmujica{
+        height: 250px;
+        width: cover;
     }
 
     #contenedor-mapa-mujica{
@@ -226,11 +236,21 @@
         margin-top: 30px;   
     }
 
+    #imgparaguay{
+        height: 250px;
+        width: cover;
+    }
+
     #contenedor-mapa-paraguay{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
         margin-top: 30px;   
+    }
+
+    #imgemilio{
+        height: 250px;
+        width: cover;
     }
 
     #contenedor-mapa-emilio{
@@ -240,6 +260,11 @@
         margin-top: 30px;   
     }
 
+    #imgrofriguez{
+        height: 250px;
+        width: cover;
+    }
+
     #contenedor-mapa-rodriguez{
         height: 400px;
         color: rgb(236, 236, 241);
@@ -247,11 +272,21 @@
         margin-top: 30px;   
     }
 
+    #imgmiguel{
+        height: 250px;
+        width: cover;
+    }
+
     #contenedor-mapa-miguel{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
         margin-top: 30px;   
+    }
+
+    #imghoussay{
+        height: 250px;
+        width: cover;
     }
 
     #contenedor-mapa-bernardo{

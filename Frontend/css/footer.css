@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,11 +65,63 @@
     margin: auto;
     
    /* background:  rgba(140, 147, 214, 0.343);*/
-    transition: all 300ms ease;
+    /* transition: all 300ms ease;
+k */
+
+
+footer{
+    height: 60px;
+    /* width: 100%; */
+    /* background-color: black;
+    justify-content: space-between;
+     */
+    
 }
-.social i{
-    vertical-align: middle;
-    font-size: 1.6em;
+
+button{
+    height: 60px;
+    font-size: 150px;
+    border: none;
+    justify-content: space-around;
+    margin: 150px; 
+    padding-inline: 30px;
+    background-color: black;
+    
+    
+}
+
+#Contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin: 20px; 
+    padding: 20px;
+   
+}
+
+#Contacto ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px; 
+    padding: 0px;
+    height: 100px;
+}
+
+#Contacto ul li button{
+    color: rgb(140, 147, 214);
+    
+     
+}
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 500px) {
+    p{
+        font-size: 12px;
+    }
 }
 
 

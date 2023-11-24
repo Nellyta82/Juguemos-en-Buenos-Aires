@@ -35,6 +35,13 @@
     height: 300px;
     width: cover;
 }
+#contenedor-mapa-antoine{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+ }
+    
 
 .patiodejuegos-chacabuco{
     display: grid;
@@ -54,9 +61,17 @@
     text-align: center;
     
 }
+#contenedor-mapa-evaperon{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+ }
 
-
-
+ #imgparquechacabuco{
+    height: 300px;
+    width: cover;
+}
 .patiodejuegos-achaval{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -75,6 +90,12 @@
     text-align: center;
     
 }
+#contenedor-mapa-achaval{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+ }
 
 #imgpatioachaval{
     height: 300px;
@@ -86,45 +107,79 @@
 
 
 
-.parque-centenario{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
+/* Haciendo Responsivo el Proyecto */
 
-#content-centenario{
-    color: rgb(236, 236, 241);
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media screen and (max-width: 700px) {
+
+    .plazoleta-antoine{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .patiodejuegos-chacabuco{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .patiodejuegos-achaval{
     
-}
-
-.plaza-giordanobruno{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-
-#content-plazagiordano{
-    color: rgb(236, 236, 241);
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
     
-}
+    
+    }
 
-#imgpatiogiordanobruno{
-    height: 300px;
-    width: cover;
+    #imgantoinesaint{
+        height: 250px;
+        width: cover;
+    }
+
+    #imgparquechacabuco{
+        height: 250px;
+        width: cover;
+    
+    }
+
+    #imgpatioachaval{
+        height: 250px;
+        width: cover;
+    }
+    
+    #contenedor-mapa-antoine{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-evaperon{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-achaval{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+   
+
 }

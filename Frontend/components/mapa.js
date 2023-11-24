@@ -48,18 +48,7 @@ comisaria.bindPopup("Comisaría Comunal 2")
 
 
 
-/*comuna 6 parque centenario*/
-var marcador = L.marker([-34.593588, -58.388884], {icon: greenIcon}).addTo(map);
-marcador.bindPopup("Parque Centenario")
 
-var circulo = L.marker([-34.5943317, -58.3910046]).addTo(map)
-circulo.bindPopup("Leloir Fundacion Instituto Leloir lucha contra el Dengue")
-
-var hospital = L.marker([-34.592155, -58.4029055], {icon: redIcon}).addTo(map);
-hospital.bindPopup("Hospital Naval Dr. Pedro Mallo")
-
-var comisaria = L.marker([-34.5910623, -58.3929271], {icon: greyIcon}).addTo(map);
-comisaria.bindPopup("Comisaría Comunal 6-A")
 
 // if(!navigator.geolocation) {
 //     console.log("Your browser doesn't support geolocation feature!")

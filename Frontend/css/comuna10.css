@@ -6,6 +6,11 @@
     
 }
 
+#imgvillareal{
+    height: 400px;
+    width: cover;
+}
+
 #contenedor-mapa-teran{
     height: 600px;
     color: rgb(236, 236, 241);
@@ -14,11 +19,21 @@
     
 }
 
+#imgteran{
+    height: 400px;
+    width: cover;
+}
+
 #contenedor-mapa-toscaneras{
     height: 600px;
     color: rgb(236, 236, 241);
     background-color: aliceblue;
     margin-top: 30px;
+}
+
+#imgtoscaneras{
+    height: 300px;
+    width: cover;
 }
 
 #imglafitte{
@@ -40,11 +55,21 @@
     margin-top: 30px;
 }
 
+#imgmontecastro{
+    height: 400px;
+    width: cover;
+}
+
 #contenedor-mapa-banff{
     height: 600px;
     color: rgb(236, 236, 241);
     background-color: aliceblue;
     margin-top: 30px;
+}
+
+#imgbanff{
+    height: 400px;
+    width: cover;
 }
 
 /* Haciendo Responsivo el Proyecto */
