@@ -1,0 +1,188 @@
+#saavedra {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    background-color: black;
+    }
+
+.parque-saavedra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-saavedra{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgsaavedra{
+    height: 400px;
+    width: cover;
+}
+
+#contenedor-mapa-saavedra{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+.patio-de-juegos-saavedra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-juegossaavedra{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#contenedor-mapa-patiosaavedra{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+#imgpatiosaavedra{
+    height: 400px;
+    width: cover;
+}
+
+.patio-de-juegos-para-niños{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-patiodejuegos{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgpatiodejuegosparaniños{
+    height: 400px;
+    width: cover;
+}
+
+
+#contenedor-mapa-patiodejuegos{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+
+
+
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 700px) {
+
+    .saavedra{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .patio-de-juegos-saavedra{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .patio-de-juegos-para-niños{
+    
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    
+    
+    }
+
+    #imgsaavedra{
+        height: 250px;
+        width: cover;
+    }
+
+    #mgpatiosaavedra{
+        height: 250px;
+        width: cover;
+    
+    }
+
+    #imgpatiodejuegosparaniños{
+        height: 250px;
+        width: cover;
+    }
+    
+
+    #contenedor-mapa-saavedra{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-patiosaavedra{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-patiodejuegos{
+        height: 300px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+   
+
+}
