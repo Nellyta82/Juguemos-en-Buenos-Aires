@@ -122,6 +122,15 @@
         width: 100%;
         margin: auto;
     }
+    .parque-saavedra{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
 
     .patio-de-juegos-saavedra{
         display: grid;
