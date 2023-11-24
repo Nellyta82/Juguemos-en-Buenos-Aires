@@ -1,5 +1,5 @@
 
-#barracas {
+#laboca {
     padding-top: 100px;
     text-align: center;
     align-content: center;
@@ -32,12 +32,12 @@
     
 }
 
-#imgespaña{
+#imgalmirante{
     height: 300px;
     width: cover;
 }
 
-#contenedor-mapa-españa{
+#contenedor-mapa-almirante{
     height: 600px;
     color: rgb(236, 236, 241);
     background-color: aliceblue;
@@ -75,7 +75,7 @@
         padding-right: 16px;
     }
 
-    #imgespana{
+    #imgalmirante{
         height: 250px;
         width: cover;
     }
@@ -87,7 +87,7 @@
         margin-top: 30px;   
     }
 
-    #contenedor-mapa-españa{
+    #contenedor-mapa-almirante{
         height: 400px;
         color: rgb(236, 236, 241);
         background-color: aliceblue;
