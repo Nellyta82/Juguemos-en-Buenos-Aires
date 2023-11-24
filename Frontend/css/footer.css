@@ -71,10 +71,10 @@ k */
 
 footer{
     height: 60px;
-    /* width: 100%; */
-    /* background-color: black;
-    justify-content: space-between;
-     */
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+   
     
 }
 
