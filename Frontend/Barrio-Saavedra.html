@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/recoleta.css">
+    <link rel="stylesheet" href="./css/saavedra.css">
+    <script src="https://kit.fontawesome.com/99644a8e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Juguemos en BA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #8c93d6">
+          <a class="navbar-brand" href="#" style="color: aliceblue;">Juguemos en Buenos Aires</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: aliceblue;" href="./login.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: aliceblue;" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="./Comunas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                  Comunas
+                </a>
+                <ul class="dropdown-menu" style="background-color: #8c93d6" style="list-style:none;">
+                    <li><a class="dropdown-item" style="color: aliceblue;" href="./Comunas.html">Comunas</a>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-1.html">Comuna 1</a>
+                  <ul style="list-style:none;">
+                    <li><a style="color: aliceblue;" href="">Retiro</a></li>
+                    <li><a style="color: aliceblue;" href="">San Nicolás</a></li>
+                    <li><a style="color: aliceblue;" href="">Puerto Madero</a></li>
+                    <li><a style="color: aliceblue;" href="">San Telmo</a></li>
+                    <li><a style="color: aliceblue;" href="">Montserrat</a></li>
+                    <li><a style="color: aliceblue;" href="">Constitución</a></li>
+                </ul>
+                  </li>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./Barrio-Recoleta.html">Comuna 2</a></li>
+                  <ul style="list-style:none;">
+                    <li ><a href="./Barrio-Recoleta.html" style="color: aliceblue;">Recoleta</a></li>
+                  </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="">Comuna 3</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Balvanera.html" style="color: aliceblue;">Balvanera </a></li>
+                    <li><a href="./Barrio-SanCristobal.html" style="color: aliceblue;">San Cristóbal</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 4</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="#" style="color: aliceblue;">La Boca</a></li>
+                    <li><a href="#" style="color: aliceblue;">Barracas</a></li>
+                    <li><a href="#" style="color: aliceblue;">Parque Patricios</a></li>
+                    <li><a href="#" style="color: aliceblue;">Nueva Pompeya</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 5</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Almagro</a></li>
+                    <li><a href="" style="color: aliceblue;">Boedo</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-6.html">Comuna 6</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Caballito.html" style="color: aliceblue;">Caballito</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna-7.html">Comuna 7</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Flores.html" style="color: aliceblue;">Flores</a></li>
+                    <li><a href="./Barrio-ParqueChacabuco.html" style="color: aliceblue;">Parque Chacabuco</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 8</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Villa Soldati</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Riachuelo</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Lugano</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna 9.html">Comuna 9</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Liniers.html" style="color: aliceblue;">Liniers</a></li>
+                    <li><a href="./Barrio-mataderos.html" style="color: aliceblue;">Mataderos</a></li>
+                    <li><a href="./Barrio-Parque-Avellaneda.html" style="color: aliceblue;">Parque Avellaneda</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna10.html">Comuna 10</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="./Barrio-Villa-Real.html" style="color: aliceblue;">Villa Real</a></li>
+                    <li><a href="./Barrio-Montecastro.html" style="color: aliceblue;">Monte Castro</a></li>
+                    <li><a href="./Barrio-Versalles.html" style="color: aliceblue;">Versalles</a></li>
+                    <li><a href="" style="color: aliceblue;">Floresta</a></li>
+                    <li><a href="" style="color: aliceblue;">Vélez Sarsfield</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Luro</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 11</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Villa General Mitre</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Devoto</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa del Parque </a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Santa Rita</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="./comuna12.html">Comuna 12</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Coghlan</a></li>
+                    <li><a href="" style="color: aliceblue;">Saavedra</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Urquiza</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Pueyrredón</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 13</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Barrios de Núñez</a></li>
+                    <li><a href="" style="color: aliceblue;">Belgrano</a></li>
+                    <li><a href="" style="color: aliceblue;">Colegiales</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 14</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Palermo</a></li>
+                </ul>
+                  <li><a class="dropdown-item" style="color: aliceblue;" href="#">Comuna 15</a></li>
+                  <ul style="list-style:none;">
+                    <li><a href="" style="color: aliceblue;">Chacarita</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Crespo</a></li>
+                    <li><a href="" style="color: aliceblue;">La Paternal</a></li>
+                    <li><a href="" style="color: aliceblue;">Villa Ortúzar</a></li>
+                    <li><a href="" style="color: aliceblue;">Agronomía</a></li>
+                    <li><a href="" style="color: aliceblue;">Parque Chas</a></li>
+                </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    
+    <main id="saavedra">
+               <h1>Barrio Saavedra</h1>
+               <p>El barrio de Saavedra comenzó a formarse en 1872 cuando Don Florencio Núñez comenzó a comprar las tierras que fueran
+                 de Don Luis María Saavedra. Luego en 1873, se le dio origen al barrio, que es el único barrio de la ciudad de Buenos 
+                 Aires, que cuenta con un acta de creación, la cual está expuesta en el Museo Histórico de Buenos Aires Cornelio Saavedra..  
+               .</p> 
+               <p>Límites: Avenida Cabildo, Avenida Gral. Paz (deslinde Capital-Provincia), Avenida De los Constituyentes,
+                 Avenida Gral. Paz (calle de servicio), Crisólogo Larralde, Galván, Núñez, Zapiola, Crisólogo Larralde</p>
+        <hr>
+               
+        <section class="parque-saavedra">  
+            <div>   
+                <img src="./media/images/saavedra (2).jpg" alt="Foto de Parque Saavedra" id="imgsaavedra">
+            </div>
+            <div id="content-saavedra">
+                <h1>Parque Saavedra</h1>
+                <p>El Parque Saavedra es un tradicional parque del barrio de Saavedra en la ciudad de Buenos Aires. El Parque Saavedra es
+                   uno de los más antiguos de la ciudad. Fue inaugurado dos años antes que el Parque 3 de Febrero. Por aquel entonces, 
+                  el paisaje era muy distinto al actual, además del lago, había un torreón colonial en su entrada y un molino holandés,
+                  Es el segundo mayor parque del barrio de Saavedra, ya que el más grande es el parque Sarmiento, ubicado a unos 2 km al 
+                  sur del parque Saavedra</p>
+                  <p>En este parque encontramos diversos espacios para la recreacion,  una muy amplia arboleda,cuenta con mesas para jugar ajedez, sector 
+                    para perros,patio de juegos infantiles y  Calesita</p>
+
+                <p>Horaio: Está abierto las 24 hrs.</p>
+                <br>
+                <p>Qué conocer cerca del Parque: Cerca de este Parque podemos encontrar restaurante,pizerias, tienda de helados, tienda de café, la parroquia Nuestra Señora de Caacupé,
+                 diversos restaurantes mercados de fin de semana.</p>
+                 <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital Max y si necesitas ir a una comisaría, la más cercana es la Comisaría Comunal 12. En el mapa te dejamos su ubicación.</p>
+                <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p>
+            
+            </div>
+            
+        </section>
+           <div id="contenedor-mapa-saavedra"> </div>   
+        <hr>
+        <section class="patio-de-juegos-saavedra">  
+          <div >
+            <img src="./media/images/saavedra (3).jpg" alt="Foto de patio-de-juegos-saavedra" id="imgpatiosavedra">
+        </div>
+            <div id="content-juegossaavedra">   
+                <h1>Patio de Juegos Parque Saavedra</h1>
+                <p>Ubicado  en el centro de la ciudad, entre Av. Diaz Velez, Patricias Argentinas 392 y Leopoldo Marechal; es un Parque muy grande y un excelente espacio para pasar el dia en familia,
+                 disfrutando de diversas actividades culturales al aire libre es un espacio privilegiado ya que en el encuentras lugar para realizar cualquier actividad, sea deporte , juegos, picnic, andar en bici, pasear tus mascotas, realizar compartir familiares y con amigos ademas que cuenta con el hermoso atractivo de un lago y cuyos visitantes se sientan a disfrutar de las vistas.
+                 También tiene calistenia y canchas de fútbol,skatepart, espacio de juegos para chicos que es muy completo y fue rempdelado recientemente, integrando así a toda la familia y a todas las edades.</p>
+                <p>Horario: Está abierto desde las 8:00 - 22:00 hrs.
+                <p>Qué conocer cerca del Parque: los fines de semana se realizan las ferias artesanales  y artesanales donde podras encontrar variedad de articulos. Dentro del parque se encuentra el Museo de Ciencias Naturales, a sus cerecania podemos encontar heladerias Grido y Lado bueno así como diversos sitios de venta de empanadas; además es importante mencionar que a las inmedicaiones de este parque se encuentra
+                 el hospital de oncología Maria Curie, y el Hospital Naval Dr. Pedro Mallo como tambien un espacio para visitar y aprender comolo es La Fundacion  Instituto Leloir  </p>
+                 <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Hospital Naval Dr. Pedro Mallo y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 6-A. En el mapa te dejamos su ubicación.</p>
+                 <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p> 
+            </div>
+           
+        </section>
+            <div id="contenedor-mapa-patiosaavedra"> </div>
+            
+        <hr>
+        <section class="patio-de-juegos-para-niños">  
+            <div >
+                <img src="./media/images/patiodejuegosparaniños.jpg" alt="Foto de la patio de juegos para niños " id="imgpatiodejuegosparaniños">
+            </div>
+           
+            <div id="content-patiodejuegos">   
+                <h1>Patio de Juegos Para Niños</h1>
+                <p>Ubicado  entre las vias del ferrocarril Sarmiento y las  calles Rojas, Bacacay, parral y Giordano Bruno, recibe su nombre como homenaje al astrónomo y matemático italinao muerto en la hoguera de la Inquisicion.
+                 la plaza cuenta con espacios de juegos para niños inaugurado este año 2023con la temantica de identidad del barrio Caballito los ferroviarios y los tranvia creando así nuevos juevos integrados con suelo anti golpe y espacio para padres 
+                 cuentan  además cuenta con una  cancha de basket, futbol para todas las edades.</p>
+                <p>Horario: Está abierto desde las 8:00 - 20:00 hrs.
+                <p>Qué conocer cerca del Parque: Podras encontrar variedad a sus cercania la estacion del tren Sarmiento parada Caballito, y si estas en el parque y quieres comer o tomar algo encuentras en sus cercanias; Bardolino Caffe y  vino, pizzeria  Caprichozo,
+                 a pocos metros los pequeños pueden seguir disfrutando en la calesita y jugueteria caballito en la calle Rojas.Ademas por estar cerca de la Av. Rivadavia encuentras una muy buenazona comercial.
+                  </p>
+                  <p>Ayuda cercana: Atención, si necesitas ir a un Hospital, el más cercano a este Parque es el Sanatorio Dr Julio Méndez y si necesitas ir a una comisaría, la más cercana es la Comisaría Vecinal 6-B. En el mapa te dejamos su ubicación.</p>
+                  <p>En el siguiente mapa podrás ver la ubicación del Parque y si quieres ver tu ubicación para saber si estás cerca del Parque, por favor dale a Permitir para que el mapa te muestre tu ubicación:</p> 
+            </div>
+            
+            
+        </section>
+            <div id="contenedor-mapa-patiodejuegos"> </div>  
+            
+    </main>
+    <script src="./components/saavedra.js"></script>
+    <script src="./components/juegossaavedra.js"></script>
+    <script src="./components/patiodejuegos.js"></script>
+    <script src="./components/mapa-saavedra.js"></script>
+    <script src="./components/mapa-patiosaavedra.js"></script> 
+    <script src="./components/mapa-patiodejuegos.js"></script>
+    <script src="../Frontend/components/NavBar.js"></script>
+
+
+</body>
+</html>
