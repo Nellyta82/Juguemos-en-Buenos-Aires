@@ -1,0 +1,274 @@
+
+#barracas {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(236, 236, 241);
+    background-color: black;
+    font-size: 20px;
+    line-height: 1.5;
+   
+    }
+
+.parque-izquierda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-izquierda{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imgespaña{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-españa{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+.parque-derecha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content-derecha{
+    color: rgb(236, 236, 241);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#contenedor-mapa{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+
+#imgestacionba{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-estacionbuenosaires{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgagustinmagaldi{
+    height: 300px;
+    width: cover;
+}
+
+#contenedor-mapa-agustinmagaldi{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgdiazvelez{
+    height: 350px;
+    width: cover;
+}
+
+#contenedor-mapa-diazvelez{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgherrera{
+    height: 450px;
+    width: cover;
+}
+
+#contenedor-mapa-herrera{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgvirrey{
+    height: 400px;
+    width: cover;
+}
+
+#contenedor-mapa-virreyvertiz{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#contenedor-mapa-parqueskate{
+    height: 600px;
+    color: rgb(236, 236, 241);
+    background-color: aliceblue;
+    margin-top: 30px;
+    
+}
+
+#imgskate{
+    height: 400px;
+    width: cover;
+}
+
+
+
+/* Haciendo Responsivo el Proyecto */
+
+@media screen and (max-width: 700px) {
+
+    .parque-izquierda{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .parque-derecha{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #imgespaña{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #contenedor-mapa-españa{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgestacionba{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-estacionbuenosaires{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgagustinmagaldi{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-agustinmagaldi{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgdiazvelez{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-diazvelez{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgherrera{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-herrera{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgvirrey{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-virreyvertiz{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+
+    #imgskate{
+        height: 250px;
+        width: cover;
+    }
+
+    #contenedor-mapa-parqueskate{
+        height: 400px;
+        color: rgb(236, 236, 241);
+        background-color: aliceblue;
+        margin-top: 30px;   
+    }
+ }
