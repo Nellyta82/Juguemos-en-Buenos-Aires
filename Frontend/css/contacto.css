@@ -35,10 +35,15 @@
         background-color: black;
     }
 
+    .card-img-top1{
+        background-size: cover;
+        height: 450px;
+    }
+
 
     .card-img-top{
         background-size: cover;
-        height: 400px;
+        height: 450px;
     }
 
     button{
